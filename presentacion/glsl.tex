@@ -1,0 +1,107 @@
+\section{GLSL: Lenguaje para escribir shaders}
+
+\begin{frame}[fragile]{Tipos primitivos}
+Esta \alert{no es} una lista exhaustiva, ante la duda consulta la \href{https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)}{referencia}.
+\begin{itemize}
+    \item Tipos de escalares: \mintinline{glsl}{float}, \mintinline{glsl}{int}, \mintinline{glsl}{bool}.
+    \item Vectores de $n \in \{2, 3, 4\}$ dimensiones: \mintinline{glsl}{vec3}, \mintinline{glsl}{ivec2}, \mintinline{glsl}{bvec4}.
+    \begin{itemize}
+        \item Nótese que cuando el tipo subyacente es \mintinline{glsl}{float} no se requiere el prefijo.
+    \end{itemize}
+    \item Los operadores aritméticos entre vectores se aplican por componente.
+    \begin{itemize}
+        \item Requieren que los operandos sean del mismo tamaño
+    \end{itemize}
+    \item Matrices de $n\times m$ dimensiones donde $n, m \in \{2, 3, 4\}$ dimensiones: \mintinline{glsl}{mat2x3}, \mintinline{glsl}{mat3x4}.
+    \begin{itemize}
+        \item Todas las matrices son de tipo \mintinline{glsl}{float}
+        \item Las matrices cuadradas se pueden abreviar: \mintinline{glsl}{mat2}
+        \item Las operaciones entre matrices, son las esperadas del álgebra lineal
+    \end{itemize}
+    \item Las multiplicaciones: \say{matriz por vector}, \say{escalar por vector} y  \say{escalar por matriz} son las definida en álgebra lineal.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Swizzling}
+\begin{itemize}
+    \item Los tipos vectoriales tienen accesores y mutadores a sus componentes individuales.
+    \item Los accesores tienen tres sintaxis equivalentes: $(x, y, z, w), (r, g, b, a), (s, t, p, q)$.
+\end{itemize}
+Esto define el llamado Swizzling:
+\begin{listing}
+\begin{minted}{glsl}
+vec2 someVec;
+vec4 otherVec = someVec.xyxx;
+vec3 thirdVec = otherVec.zyy;
+vec4 fourthVec;
+// Tambien funciona en l-values:
+fourthVec.wzyx = vec4(1.0, 2.0, 3.0, 4.0); // Reverses the order.
+fourthVec.zx = vec2(3.0, 5.0); // Sets the 3rd component to 3 and the 1st component to 5
+\end{minted}
+\end{listing}
+\end{frame}
+
+\begin{frame}[fragile]{Constructores de vectores}
+Se pueden construir a partir de:
+\begin{itemize}
+    \item Vectores de mayor dimensión (los componentes extra son ignorados).
+    \item Una combinación de escalares y de vectores de menor dimensión.
+    \item De manera abreviada, especificando un solo escalar que se repite.
+\end{itemize}
+\begin{listing}
+\begin{minted}{glsl}
+vec4(vec2(10.0, 11.0), 1.0, 3.5) == vec4(10.0, vec2(11.0, 1.0), 3.5);
+vec3(vec4(1.0, 2.0, 3.0, 4.0)) == vec3(1.0, 2.0, 3.0);
+vec4(vec3(1.0, 2.0, 3.0)); // error. Not enough components.
+vec2(vec3(1.0, 2.0, 3.0)); // OK
+vec3(1.0) // Abreviation to say: vec3(1.0, 1.0, 1.0);
+\end{minted}
+\end{listing}
+\end{frame}
+
+
+\begin{frame}[fragile]{Constructores de matrices}
+\begin{itemize}
+    \item Se construyen por columnas.
+    \item Se pueden construir a partir de matrices de menor o igual dimensión.
+    \item O de manera abreviada especificando un solo escalar que llena la diagonal.
+\end{itemize}
+\begin{listing}
+\begin{minted}{glsl}
+mat2(
+  float, float,   // first column
+  float, float);  // second column
+
+mat4(
+  vec4,           // first column
+  vec4,           // second column
+  vec4,           // third column
+  vec4);          // fourth column
+
+mat3 diagMatrix = mat3(5.0);  // Diagonal matrix with 5.0 on the diagonal.
+mat4 otherMatrix = mat4(diagMatrix); // The last element on the diagonal is 1.0
+\end{minted}
+\end{listing}
+\end{frame}
+
+\begin{frame}{Built-in functions}
+Además de las funciones habituales esperadas, algunas funciones interesantes:
+\begin{table}[htb]
+  \begin{center}
+    \begin{tabular}{l | l }
+      \mintinline{glsl}{vec3 mix(vec3 x, vec3 y, float a)} & Interpolación lineal \\
+      \mintinline{glsl}{vec3 step(float edge, vec3 x)} & Función escalón \\
+      \mintinline{glsl}{vec3 smoothstep(float e0, float e1, vec3 x)} & Interpolación de Hermite \\
+      \mintinline{glsl}{float dot(vec3 x, vec3 y)} & Producto punto \\
+      \mintinline{glsl}{vec3 cross(vec3 x, vec3 y)} & Producto cruz \\
+      \mintinline{glsl}{vec3 reflect(vec3 i, vec3 n)} & Reflejar $\mathbf{i}$ a partir de $\mathbf{n}$ \\
+      \mintinline{glsl}{vec3 clamp(vec3 x, vec3 min, vec3 max)} & Limitar entre dos valores \\
+      \mintinline{glsl}{float length(vec3 x)} & Norma de un vector \\
+      \mintinline{glsl}{vec3 normalize(vec3 x)} & Vector normalizado \\
+      \mintinline{glsl}{float distance(vec3 x, vec3 y)} & Distancia entre dos vectores \\
+    \end{tabular}
+  \end{center}
+\end{table}
+Todas las funciones tienen las sobrecargas vectoriales, cuando corresponde.
+\end{frame}

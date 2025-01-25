@@ -1,0 +1,147 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage{fontspec}
+% Aspect ratio:
+% 610 => 16:10 
+% 169 => 16:9 (Mas común actualmente)
+% 149 => 14:9
+%  54 => 5:4
+%  43 => 4:3 (Default)
+%  32 => 3:2
+
+% Tamaño de la fuente
+% 8pt, 9pt, 10pt, 11pt (default), 12pt, 14pt, 17pt, 20pt
+
+% Opciones de lenguaje usando polyglossia (defino dos para este documento)
+\usepackage{polyglossia}
+\setmainlanguage{spanish}
+\setotherlanguage[variant=american]{english}
+
+\usepackage{anyfontsize}
+
+% Los símbolos el los conjuntos numéricos
+\usepackage{amssymb} 
+
+ % Incluir imágenes
+\usepackage{graphicx}
+% Poder usar subfiguras
+\usepackage{subcaption} 
+% Para presentaciones usualmente no necesitamos la primer parte del caption
+\captionsetup[figure]{labelformat=empty}
+% \captionsetup[table]{labelformat=empty}
+\captionsetup[subfigure]{labelformat=empty}
+% quitar los simbolos de navegacion
+\beamertemplatenavigationsymbolsempty
+
+% Tablas con estilo profesional
+\usepackage{booktabs}
+
+% Para usar varias columnas
+\usepackage{multicol}
+
+% Para poner algortmos en pseudo código
+\usepackage{algpseudocode}
+% Ambiente flotante para los algoritmos
+\usepackage{algorithm} 
+% Hacer los comentarios en el pseudocódigo similares a los de C++
+%\algrenewcommand{\algorithmiccomment}[1]{\hskip3em$//$ #1}
+% El paquete algorithm, no tiene traducción automática
+\floatname{algorithm}{Algoritmo}
+\renewcommand{\algorithmicrequire}{\textbf{Entradas:}}
+\renewcommand{\algorithmicensure}{\textbf{Salidas:}}
+\renewcommand{\listalgorithmname}{Índice de algoritmos}
+
+
+%Para insertar código fuente en algún lenguaje de programación
+\usepackage[newfloat=true]{minted} 
+% Requiere que compiles usando:
+% $xelatex --shell-escape input.tex
+
+% Configuración del entorno minted para poner código fuente
+\DeclareCaptionFormat{mitedFormat}{%
+    \textbf{#1#2}#3}
+\DeclareCaptionStyle{minetdStyle}{skip=0cm,width=.85\textwidth,justification=centering,
+  font=footnotesize,singlelinecheck=off,format=mitedFormat,labelsep=space}
+\newenvironment{mintedCode}{\captionsetup{type=listing,style=minetdStyle}}{}
+% Cambia el nombre de la etiqueta. Afecta a todos los códigos minted del documento
+%\SetupFloatingEnvironment{listing}{name=Código}
+\captionsetup[listing]{labelformat=empty}
+
+% Opciones de minted para el lenguaje GLSL
+\setminted[glsl]{frame=lines,framesep=0.25cm,baselinestretch=1,fontsize=\scriptsize,breaklines}
+% Cuando lo hagas dentro de un párrafo el tamaño de fuente debe ser normal
+\setmintedinline[glsl]{fontsize=auto}
+
+% Para usar las comillas en español
+\usepackage{dirtytalk}
+
+% Crear un comando con el nombre de la UNAM
+\newcommand{\unam}{
+  \bfseries
+  \normalsize{Universidad Nacional Autónoma de México}
+}
+
+% Crear un comando para el email
+\newcommand{\email}[1]{
+    \texttt{
+      \href{https://#1}{#1}
+    }
+}
+
+% Construyendo la diapositiva de titulo
+\title[Shadertoy]{Shaders de Juguete (Shadertoy)}
+\subtitle{Usando trucos matemáticos para dibujar en tu navegador web}
+\author[Dr. Jorge García]{Dr. Jorge Antonio García Galicia}
+\institute[FES Acatlán]{
+%     email for contact
+    \normalsize{\email{nemediano.github.io}}
+%    university name
+%    \unam
+}
+\date[Congreso AI 2025] % (optional)
+{Congreso de Inteligencia Artificial, Abril 2025}
+\titlegraphic{\includegraphics[width=1.7cm]{img/escudo-a}}
+
+% Para que el logo parezca en todas las diapositivas
+%\logo{\includegraphics[height=1cm]{img/escudo-a}}
+
+\usetheme{AnnArbor}
+\useinnertheme{circles}
+\usecolortheme{orchid}
+% El tema Annharbor no usa comando de alerta. Los redefinimos
+\setbeamercolor{block title alerted}{fg=white,bg=red}
+\setbeamercolor{alerted text}{fg=red}
+
+% Definición de colores especiales
+\definecolor{azul_unam}{RGB}{0, 43, 122}
+\definecolor{dorado_unam}{RGB}{187, 136, 0}
+\definecolor{amarillo_quemado}{RGB}{212, 180, 21}
+
+\setbeamercolor{frametitle}{fg=black,bg=amarillo_quemado}
+\setbeamercolor{title}{fg=azul_unam,bg=dorado_unam}
+\setbeamercolor{title in head/foot}{fg=black,bg=amarillo_quemado}
+\setbeamercolor{subsection in head/foot}{fg=azul_unam,bg=dorado_unam}
+\setbeamercolor{section in head/foot}{fg=dorado_unam}
+\setbeamercolor{author in head/foot}{fg=dorado_unam}
+\setbeamercolor{institute in head/foot}{fg=dorado_unam}
+\setbeamercolor{page number in head/foot}{fg=azul_unam,bg=dorado_unam}
+\setbeamercolor{date in head/foot}{fg=azul_unam,bg=dorado_unam}
+
+% Pongo linkcolor vacío para que los links internos no tengan color
+% Solo los links externos tienen color
+\hypersetup{colorlinks,linkcolor=,urlcolor=azul_unam}
+
+\setbeamertemplate{caption}{\insertcaption}
+
+\begin{document}
+% Primer slide contiene el título
+\begin{frame}{}
+    \maketitle
+\end{frame}
+% El contenido de la presentación esta en estos documentos
+\input{introduccion}
+\input{graficas}
+\input{shadertoy}
+\input{glsl}
+\input{shaders}
+
+\end{document}
