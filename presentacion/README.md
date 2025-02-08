@@ -9,7 +9,7 @@ En Ubuntu, se pueden instalar todas estas dependencias por medio del gestor de p
 
 La primera vez, para compilar desde cero, se puede hacer:
 
-1.Ejecutar XeLaTeX
-1.Ejecutar XeLaTeX
-1.Ver el pdf
+1. Ejecutar XeLaTeX
+1. Ejecutar XeLaTeX
+1. Ver el pdf
 
