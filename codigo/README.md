@@ -1,5 +1,9 @@
 # Ejercicios
 
+Todo el código en este folder está escrito en [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)), pero al ser este un taller de [Shadertoy](https://www.shadertoy.com/) requiere la infraestructura del sitio para funcionar correctamente.
+
+Es decir puedes copiar y pegar en los respectivos tabuladores dentro del navegador y debería de funcionar. Sin embargo, si lo quieres usar como parte de una standalone app de [OpenGL](https://www.opengl.org/) o [Vulkan](https://www.vulkan.org/), deberás adaptar el código a tus necesidades.
+
 Recuerda que hay varias maneras de resolver cada ejercicio, dado que esto es programación creativa.
 Es decir, las respuestas aquí presentadas son solo una de varias maneras de llegar al resultado.
 
