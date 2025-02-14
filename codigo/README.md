@@ -29,3 +29,12 @@ Puedes usar el final del ejercicio anterior
 * Idealmente alguna animación
 * Tener algún tipo de efecto para el fondo de la escena
 * Entender cómo funciona el “algoritmo del pintor” (que figura esta encima de que otra)
+
+# [Ejercicio 4: Esfera usando Ray Marching](Ejercicio4)
+La idea de este ejercicio es hacer una primera implementación de Ray marching
+Puedes partir del código de inicio para facilitar las cosas.
+* En particular los valores de las constantes: la posición de la cámara, la luz y la esfera están en un lugar que debe funcionar relativamente bien.
+* Implementa una función de rayMarching como en las diapositivas
+* Luego implementa un función de shading. Puedes usar la reflexión difusa, con algún color.
+* Debes de implementar también el gradiente, pues lo requerirá tu función de shading.
+
