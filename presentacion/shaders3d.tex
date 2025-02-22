@@ -21,13 +21,13 @@ Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}
 \column[t]{0.5\textwidth}
 \begin{itemize}
     \item $\mathbf{o}$ es el origen del rayo.
-    \item $\mathbf{d}$ es la direccion del rayo.
+    \item $\mathbf{d}$ es la dirección del rayo.
     \item $s$ es el parámetro.
 \end{itemize}    
 \column[t]{0.5\textwidth}
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=0.6\textwidth]{img/ray}    
+    \includegraphics[width=0.6\textwidth]{img/ray.eps}    
 \end{figure}
 \end{columns}
 \end{frame}
@@ -36,9 +36,9 @@ Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}
 Es una técnica para hacer un avance adaptativo de lo rayos.
 \begin{enumerate}
     \item En el punto actual del rayo calcula la distancia $d$ del punto con respecto a la escena.
-    La \emph{distancia} de la escena, es la minima de todas las sdfs a las figuras en la escena.
-    \item Si $d$ es menor que un cierto $\epsilon$, termina y reporta que hay una colison con la escena.
-    \item Si $d$ es mayor que un cierto valor frontera termina y di que no hay colision.
+    La \emph{distancia} de la escena, es la mínima de todas las sdfs a las figuras en la escena.
+    \item Si $d$ es menor que un cierto $\epsilon$, termina y reporta que hay una colisión con la escena.
+    \item Si $d$ es mayor que un cierto valor frontera termina y di que no hay colisión.
     \item Avanza el rayo en $d$ unidades, y repite desde 1.
 \end{enumerate}
 Esta técnica solo se puede usar si\ldots
@@ -122,6 +122,266 @@ Donde $f(\mathbf{x})$ es una sdf y $\epsilon$ un numero positivo muy pequeño.
         \begin{figure}[htb]
             \centering
             \includegraphics[width=0.6\textwidth]{img/Ejer4}
+        \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{¿Qué mas podemos añadir?}
+
+En lo que resta del taller vamos a añadir algunas cosas al ejemplo de Raymarching:
+
+\begin{enumerate}
+    \item Como manejar una escena con varios objetos
+    \item Como hacer un modelo de cámara mas robusto
+    \item El modelo de iluminación de Blin-Phong
+    \item \href{https://en.wikipedia.org/wiki/Constructive_solid_geometry}{Constructive solid geometry} gracias a las sdf
+\end{enumerate}
+
+\end{frame}
+
+\subsection{Escena con mas de un objeto}
+\begin{frame}[fragile]{Generalizar la escena para varios objetos}
+Actualmente, la escena esta definida por una sola sdf.
+Para hacer el código mas general hay varios métodos.
+Aquí solo voy a explicar uno de ellos.
+
+\begin{itemize}
+    \item Definir una estructura mas general que represente un punto en la escena.
+    \item De momento contiene un escalar que representa la distancia del punto sobre el rayo.
+    \item Para demostrar la utilidad vamos a incluir un campo extra (el color).
+\end{itemize}
+
+\begin{listing}
+\begin{minted}{glsl}
+struct ScenePoint {
+  float dist;
+  vec3 color;
+};
+\end{minted}
+\end{listing}
+
+\end{frame}
+
+\begin{frame}[fragile]{Mas detalles\ldots}
+\begin{itemize}
+    \item La función \mintinline{glsl}{sdScene} debería regresar ahora un \mintinline{glsl}{ScenePoint}.
+    \item Por supuesto, esto requiere cambiar \mintinline{glsl}{calcNormal}
+    \item Y por ultimo, también cambiar \mintinline{glsl}{RayMarch} para regresar un \mintinline{glsl}{ScenePoint}. 
+\end{itemize}
+
+\begin{block}{¿Qué necesitamos saber de un punto en la escena?}
+    \begin{itemize}
+        \item Antes, lo único que necesitábamos para identificar un punto en la escena era la distancia a la que debíamos marchar el rayo.
+        
+        \item Solo le estamos poniendo mas información a ese punto.
+    \end{itemize}
+\end{block}
+
+\begin{block}{¿Como se manejan varios objetos en la escena?}
+    \begin{itemize}
+        \item La función \mintinline{glsl}{sdScene} debe de regresar la \alert{distancia mínima} de la distancias a todos los objetos de la escena. 
+        
+        \item La escena es un objeto formado por todos los objetos que contiene. Por lo tanto, la \say{sdf de la escena} esta definida como la mínima de todas las distancias.
+    \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Agregando el piso de la escena}
+Podemos definir fácilmente la sdf de un semiespcacio ortogonal al eje $y$.
+\begin{listing}
+\begin{minted}{glsl}
+float sdFloor(vec3 position, float floorHeight) {
+    return position.y - floorHeight;
+}
+\end{minted}
+\end{listing}
+Y podemos definir un color en términos de una posición en el plano $xy$, por ejemplo para crear un patrón de \say{tablero de ajedrez}.
+\begin{listing}
+\begin{minted}{glsl}
+vec3 getCheckboardPattern(vec2 coords, vec3 colorEven, vec3 colorOdd) {
+    float alpha = mod(floor(coords.x) + floor(coords.y), 2.0);
+    return mix(colorEven, colorOdd, alpha);
+}
+\end{minted}
+\end{listing}
+
+\end{frame}
+
+\begin{frame}[fragile]{Ejemplo de sdf con varios objetos}
+\begin{listing}
+\begin{minted}{glsl}
+ScenePoint sdScene(vec3 position) {
+  ScenePoint closestShape;
+  // Closest shape is the first shape (the floor)
+  closestShape.dist = sdFloor(position, -1.0);
+  closestShape.color = getCheckboardPattern(position.xz, vec3(1.0), vec3(1.4));
+  // Now test the second shape (a box)
+  float testDistance = sdBox(position, vec3(1.5, 0.0, 0.0), vec3(1.0));
+  // If this shape is closer, update closest shape
+  if (testDistance < closestShape.dist) {
+    closestShape.dist = testDistance;
+    closestShape.color = DarkSeaGreen;
+  }
+
+  return closestShape;
+}
+\end{minted}
+\end{listing}
+\end{frame}
+
+\subsection{Un modelo de cámara}
+
+\begin{frame}{Un modelo de cámara típico}
+En CG, la cámara esta definida con dos matrices:
+\begin{enumerate}
+  \item La de \alert{vista}: Que contiene la \href{https://en.wikipedia.org/wiki/Pose_(computer_vision)}{pose} de la cámara.
+  \item La de \alert{proyección}: Que define el volumen de visión de la cámara.
+\end{enumerate}
+\begin{itemize}
+   \item Una \say{pose} es una posición, en el espacio junto con una orientación (dirección).
+   \begin{itemize}
+     \item Típicamente, se usan un punto en $\mathbb{R}^3$ y un \href{https://en.wikipedia.org/wiki/Quaternion}{cuaternión}. Por lo que tiene 7 grados de libertad.
+     \item Piensa en ella como posicionar tu cámara usando un \href{https://en.wikipedia.org/wiki/Tripod_(photography)}{tripié}
+   \end{itemize}
+   \item Cuando decimos proyección, generalmente queremos decir \href{https://en.wikipedia.org/wiki/3D_projection\#Perspective_projection}{proyección en perspectiva}.
+   \begin{itemize}
+     \item Se define con una proporción del plano (\emph{aspect ratio}) y dos distancias: la cercana y la lejana.
+     \item Piensa en ella como configurar tu cámara: escoger el lente adecuado, ajustar el zoom, etc.
+   \end{itemize}
+\end{itemize}
+\begin{block}{}
+ En nuestro caso la proyección esta implícita en el algoritmo de Ray Marching.
+ \begin{itemize}
+   \item Solo nos hace falta construir la vista.
+ \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{La pose de la cámara}
+Hay varias maneras de definir una pose para nuestra cámara.
+\begin{itemize}
+    \item No necesitamos la matriz de vista completa
+    \item Una posibilidad es usar el modelo \say{Look at} que se define con dos puntos y un vector:
+    \begin{itemize}
+        \item El centro de visión (posición de la cámara)
+        \item El objetivo (el punto en la escena que quieres enfocar)
+        \item El vector arriba (generalmente el eje $y$).
+    \end{itemize}
+    \item Lo vamos a simplificar a un vector arriba fijo, por lo que solo necesitaremos los dos puntos. Puedes consultar la teoría \href{https://learnopengl.com/Getting-started/Camera}{aquí}.
+\end{itemize}
+\begin{listing}
+\begin{minted}{glsl}
+mat3 camRotation(Camera cam) {
+    vec3 camDir = normalize(cam.target - cam.position);
+    vec3 camRight = normalize(cross(vec3(0, 1, 0), camDir));
+    vec3 camUp = normalize(cross(camDir, camRight));
+
+    return mat3(-camRight, camUp, -camDir);
+}
+\end{minted}
+\end{listing}
+\end{frame}
+
+\begin{frame}[fragile]{La pose de la cámara}
+Para nuestro caso, rotar la cámara significa rotar la dirección de los rayos:
+\begin{listing}
+\begin{minted}{glsl}
+Camera cam;
+cam.position = vec3(0.0, 1.0, 2.0);
+cam.target = vec3(0.0);
+
+Ray ray;
+ray.origin = cam.position;
+ray.direction = camRotation(cam) * normalize(vec3(coord.xy, -1.0));
+\end{minted}
+\end{listing}
+\end{frame}
+
+\subsection{El modelo de iluminación de Blin-Phong}
+
+\begin{frame}{El modelo de iluminación de Blin-Phong}
+\begin{columns}
+\column[t]{0.5\textwidth}
+\begin{itemize}
+ \item En 1975 \href{https://en.wikipedia.org/wiki/Phong_reflection_model}{Bui Tuong Phong} desarolló un modelo de iluminación.
+ \item La reflexion de la luz se divide en tres coponentes: ambiente, especular y difusso.
+ \item En 1977 \href{https://en.wikipedia.org/wiki/Blinn-Phong_reflection_model}{Jim Blinn}, modificó el calculo del componente especular para hacerlo mas estable y mas eficiente.
+ \item Es el modelo de shading sencillo mas usado.
+\end{itemize}
+\column[t]{0.5\textwidth}
+\begin{figure}[htp]
+ \centering
+ \begin{subfigure}[b]{0.42\textwidth}
+   \includegraphics[width=\textwidth]{img/ambiente}
+   \caption{Ambiente}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.42\textwidth}
+   \includegraphics[width=\textwidth]{img/difuso}
+   \caption{Difuso}
+ \end{subfigure}
+\\
+ \begin{subfigure}[b]{0.42\textwidth}
+   \includegraphics[width=\textwidth]{img/especular}
+   \caption{Especular}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.42\textwidth}
+   \includegraphics[width=\textwidth]{img/completo}
+   \caption{Completo}
+ \end{subfigure}
+\end{figure} 
+\end{columns}
+\end{frame}
+
+\begin{frame}{¿Cómo se calcula la reflexión?}
+La reflexión de la luz (color) de un punto en la superficie se calcula como:
+ $$\mathbf{L}_a \mathbf{K}_a + \mathbf{L}_d \mathbf{K}_d (\mathbf{n} \cdot \mathbf{l}) + \mathbf{L}_s \mathbf{K}_s (\mathbf{v} \cdot \mathbf{h})^{\alpha}$$
+ En donde:
+ \begin{itemize}
+  \item $\mathbf{L}$ son los tres colores (ambiente, difuso y especular) de la luz 
+  \item $\mathbf{K}$ son los tres colores (ambiente, difuso y especular) del material.
+  \item $\alpha$ es la constante del brillo del material
+  \item $\mathbf{n}$ la normal a la superficie en el punto
+  \item $\mathbf{l}$ un vector unitario que apunta a la fuente de luz desde el punto
+  \item $\mathbf{v}$ un vector unitario que apunta a la camara desde el punto
+  \item $\mathbf{h} = \frac{\mathbf{l} + \mathbf{v}}{|\mathbf{l} + \mathbf{v}|}$ un vector unitario, llamado \say{halfway vector}.
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Detalles de implementación}
+\begin{itemize}
+  \item A cada objeto de la escena se le asiga un material en vez de un color
+  \item En escenas simples, se aconseja definir la luz como blanco intenso; para evitar complicaciones.
+   \item El material esta formado por tres colores ($\mathbf{K}_a, \mathbf{K}_d, \mathbf{K}_s$) y un escalar ($\alpha$)
+   \item Usualmente restringimos $\alpha \in [ 0.5, 128 ]$, y cuando experimenatmos, la variamos logaritmicamente.
+  \begin{itemize}
+   \item Un $\alpha$ grande produce brillos pequeños y concentrados.
+   \item Un $\alpha$ pequeño produce brillos grandes y débiles.
+  \end{itemize}
+  \item Dado que no se puede \say{restar luz}, los productos puntos $\mathbf{n} \cdot \mathbf{l}$ y $\mathbf{v} \cdot \mathbf{h}$ deben ser no negativos.
+  \item Si hay mas de una luz en la escena:
+  \begin{itemize}
+   \item Se calcula el componente normal una vez.
+   \item Y los componentes difuso y especular una vez por cada luz, acumulando (sumando) el resultado
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ejercicio: Mejorar el Ray Marching anterior}
+\url{https://github.com/nemediano/tallerShadertoy/tree/main/codigo/Ejercicio5}
+\begin{columns}
+\column[t]{0.5\textwidth}
+     \begin{itemize}
+         \item Lógica para desplegar varios objetos en la escena, uno de ellos un piso.
+         \item La cámara se define con el modelo LookAt. Idealmente una cámara que gire alrededor de la escena.
+         \item Utilice el algoritmo de Blinn–Phong para hacer el shading
+     \end{itemize}
+\column[t]{0.5\textwidth}
+        \begin{figure}[htb]
+            \centering
+            \includegraphics[width=0.6\textwidth]{img/Ejer5}
         \end{figure}
 \end{columns}
 \end{frame}

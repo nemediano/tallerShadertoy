@@ -38,3 +38,8 @@ Puedes partir del código de inicio para facilitar las cosas.
 * Luego implementa un función de shading. Puedes usar la reflexión difusa, con algún color.
 * Debes de implementar también el gradiente, pues lo requerirá tu función de shading.
 
+# [Ejercicio 5: Escena con RayMarching](Ejercicio5)
+La idea de este ejercicio es mejorar la implementación anterior de RayMarching para que sea más flexible. Debes de añadir al menos:
+* Lógica para desplegar varios objetos en la escena, uno de ellos un piso.
+* La cámara se define con el modelo LookAt. Idealmente una cámara que gire alrededor de la escena.
+* Utilice el algoritmo de [https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_reflection_model](Blinn–Phong) para hacer el shading

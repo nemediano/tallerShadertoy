@@ -22,6 +22,15 @@ Indentation Mode=normal
 Mode=LaTeX
 Mode Set By User=false
 
+[document-settings,item:introduccion.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
 [document-settings,item:presentacion.tex]
 Bookmarks=
 Encoding=UTF-8
@@ -80,7 +89,7 @@ open=false
 order=-1
 
 [item:presentacion.tex]
-open=true
+open=false
 order=0
 
 [item:shaders.tex]
@@ -88,12 +97,12 @@ open=true
 order=0
 
 [item:shaders2d.tex]
-open=true
+open=false
 order=1
 
 [item:shaders3d.tex]
 open=true
-order=2
+order=0
 
 [item:shadertoy.tex]
 open=false
@@ -119,6 +128,14 @@ JumpList=
 TextFolding=[]
 ViMarks=.,71,45,[,71,45,],71,45
 
+[view-settings,view=0,item:introduccion.tex]
+CursorColumn=42
+CursorLine=18
+Dynamic Word Wrap=false
+JumpList=
+TextFolding=[]
+ViMarks=
+
 [view-settings,view=0,item:presentacion.tex]
 CursorColumn=17
 CursorLine=145
@@ -136,20 +153,20 @@ TextFolding=[]
 ViMarks=.,168,0,[,168,0,],168,0
 
 [view-settings,view=0,item:shaders2d.tex]
-CursorColumn=0
-CursorLine=411
+CursorColumn=14
+CursorLine=270
 Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
-ViMarks=.,410,11,[,0,0,],-1,-1
+ViMarks=.,270,13,[,270,13,],270,13
 
 [view-settings,view=0,item:shaders3d.tex]
-CursorColumn=14
-CursorLine=28
-Dynamic Word Wrap=false
+CursorColumn=18
+CursorLine=379
+Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
-ViMarks=.,29,48,[,29,46,],29,48
+ViMarks=.,383,58,[,383,58,],383,58
 
 [view-settings,view=0,item:shadertoy.tex]
 CursorColumn=15
