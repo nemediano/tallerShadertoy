@@ -2,14 +2,14 @@
 \begin{frame}{Repositorio}
 Todo lo necesario para este taller esta en este repositorio: 
 \begin{block}{}
-\url{https://github.com/nemediano/tallerShadertoy}.
+\url{https://github.com/nemediano/tallerShadertoy}
 \end{block}
 \begin{itemize}
     \item Ésta presentación, también esta en el mismo repositorio. Así puedes seguir los links.
     \item Para cada ejercicio, hay dos versiones de código fuente.
     \begin{enumerate}
-        \item El código mínimo para empezar el ejercicio
-        \item Una posible solución al ejercicio 
+        \item El código mínimo para empezar el ejercicio.
+        \item Una posible solución al ejercicio.
     \end{enumerate}
 \end{itemize}
 
@@ -35,9 +35,10 @@ En shadertoy, la ejecución inicia y termina con la función:
 \begin{columns}
 \column[t]{0.5\textwidth}
      \begin{itemize}
-         \item Tratar de escribir un shader que genere una bandera a cuadros (o tablero de ajedrez si lo prefieres)
+         \item Tratar de escribir un shader que genere una bandera a cuadros (o tablero de ajedrez si lo prefieres).
          \item Puedes empezar con el código de default de shader toy.
-         \item Recuerda las funciones trigonométricas
+         \item Hay varias maneras de resolver el ejercicio: funciones trigonométricas, módulos, etc.
+         \item Trata de evitar hacer branching.
      \end{itemize}
 \column[t]{0.5\textwidth}
         \begin{figure}[htb]
@@ -55,7 +56,7 @@ En shadertoy, la ejecución inicia y termina con la función:
 \column[t]{0.5\textwidth}
     \begin{itemize}
          \item Al principio, las coordenadas del fragment están en el espacio del imagen del render target. Miden pixeles.
-         \item Cuando dividimos entre la resolución del render target, están en coordenadas de textura ($uv$-mapping). $u,v \in [ 0,1 ]$
+         \item Cuando dividimos entre la resolución del render target, están en coordenadas de textura ($uv$-mapping), $u,v \in [ 0,1 ]$.
      \end{itemize}
 \column[t]{0.5\textwidth}
 \begin{figure}[htp]
@@ -77,7 +78,7 @@ En shadertoy, la ejecución inicia y termina con la función:
 \begin{columns}
 \column[t]{0.5\textwidth}
     \begin{itemize}
-        \item Cuando restamos 0.5 y multiplicamos por dos. Están en coordenadas normalizadas. $x,y \in [-1, 1]$.
+        \item Cuando restamos 0.5 y multiplicamos por dos. Están en coordenadas normalizadas: $x,y \in [-1, 1]$.
         \item Cuando corregimos con el \emph{aspect ratio} de la pantalla, están en coordenadas de la escena. El origen esta en el centro, el eje mas restrictivo esta en $[-1, 1]$ y el otro es proporcional.
      \end{itemize}
 \column[t]{0.5\textwidth}
@@ -145,10 +146,10 @@ Después veremos por que esta función, de hecho regresa un vector en $\mathbb{R
 \begin{columns}
 \column[t]{0.5\textwidth}
      \begin{itemize}
-         \item Abstraer el código en funciones
-         \item Tener una función que cambia las coordenadas
-         \item Tener una función para el fondo
-         \item Puedes utilizar la guía de colores
+         \item Abstraer el código en funciones.
+         \item Tener una función que cambia las coordenadas.
+         \item Tener una función para el fondo.
+         \item Puedes utilizar la guía de colores.
      \end{itemize}
 \column[t]{0.5\textwidth}
         \begin{figure}[htb]
@@ -166,7 +167,7 @@ Hay una definición formal de \href{https://en.wikipedia.org/wiki/Affine_transfo
     Entonces $A(\mathbf{x}) = M \mathbf{x} + \mathbf{d}$ es una transformación afín.
 \end{block}
 \begin{itemize}
-    \item Todas las transformaciones lineales son transformaciones afines (con $\mathbf{d} = \mathbf{0}$)
+    \item Todas las transformaciones lineales son transformaciones afines (con $\mathbf{d} = \mathbf{0}$).
     \item Todas las traslaciones son transformaciones afines (con $M = I$).
 \end{itemize}
 \end{frame}
@@ -176,8 +177,8 @@ Hay una definición formal de \href{https://en.wikipedia.org/wiki/Affine_transfo
 
 \begin{itemize}
     \item Todas las transformaciones lineales pueden llevarse a cabo multiplicando matrices.
-    \item Pero las traslaciones no se pueden llevar a cabo multiplicando matrices
-    \item Para solucionar ese problemas usamos las \href{https://en.wikipedia.org/wiki/Homogeneous_coordinates}{coordenadas homogéneas}
+    \item Pero las traslaciones no se pueden llevar a cabo multiplicando matrices.
+    \item Para solucionar ese problemas usamos las \href{https://en.wikipedia.org/wiki/Homogeneous_coordinates}{coordenadas homogéneas}.
 \end{itemize}
 Vamos a adoptar la convención de que tanto puntos, como vectores son representados en columna.
 \begin{block}{}
@@ -195,8 +196,8 @@ Vamos a adoptar la convención de que tanto puntos, como vectores son representa
 \begin{columns}
 \column[t]{0.5\textwidth}
 \begin{itemize}
-    \item Traslada una curva en el espacio
-    \item Tiene parámetro el vector de traslación $\mathbf{t}$
+    \item Traslada una curva en el espacio.
+    \item Tiene parámetro el vector de traslación $\mathbf{t}$.
     \item Se puede expresar con la siguiente matriz:
 \end{itemize}
 $$
@@ -218,9 +219,9 @@ y + t_y \\
 \end{bmatrix}
 $$
 \begin{itemize}
-    \item Si $\mathbf{t} = \mathbf{0}$, hay una operación nula
-    \item La operación inversa es trasladar por $-\mathbf{t}$
-    \item La figura muestra una traslación por $\mathbf{t} = (2, 1)^t$
+    \item Si $\mathbf{t} = \mathbf{0}$, hay una operación nula.
+    \item La operación inversa es trasladar por $-\mathbf{t}$.
+    \item La figura muestra una traslación por $\mathbf{t} = (2, 1)^t$.
 \end{itemize}
 \column[t]{0.5\textwidth}
 \begin{figure}[htp]
@@ -241,8 +242,8 @@ $$
 \begin{columns}
 \column[t]{0.55\textwidth}
 \begin{itemize}
-    \item Rota una curva \emph{alrededor del origen}
-    \item Tiene parámetro el angulo de rotación $\theta$
+    \item Rota una curva \emph{alrededor del origen}.
+    \item Tiene parámetro el angulo de rotación $\theta$.
     \item Se puede expresar con la siguiente matriz:
 \end{itemize}
 $$
@@ -264,9 +265,9 @@ x \sin \theta + y \cos \theta  \\
 \end{bmatrix}
 $$
 \begin{itemize}
-    \item Si $\theta = 0$, hay una operación nula
-    \item La operación inversa es rotar por $-\theta$
-    \item La figura muestra una rotación de $\theta = \frac{\pi}{4}$
+    \item Si $\theta = 0$, hay una operación nula.
+    \item La operación inversa es rotar por $-\theta$.
+    \item La figura muestra una rotación de $\theta = \frac{\pi}{4}$.
 \end{itemize}
 \column[t]{0.45\textwidth}
 \begin{figure}[htp]
@@ -287,8 +288,8 @@ $$
 \begin{columns}
 \column[t]{0.5\textwidth}
 \begin{itemize}
-    \item Escala una curva \emph{con respecto al origen}
-    \item Tiene parámetro el factor de escala $\mathbf{s}$
+    \item Escala una curva \emph{con respecto al origen}.
+    \item Tiene parámetro el factor de escala $\mathbf{s}$.
     \item Se puede expresar con la siguiente matriz:
 \end{itemize}
 $$
@@ -310,9 +311,9 @@ s_y \cdot y  \\
 \end{bmatrix}
 $$
 \begin{itemize}
-    \item Si $\mathbf{s} = ( 1 , 1 )^t$, hay una operación nula
-    \item La operación inversa es escalar por $\mathbf{s} = (\frac{1}{s_x} , \frac{1}{s_y} )^t$
-    \item La figura muestra un escalamiento por $\mathbf{s} = ( \frac{1}{2} , 2 )^t$
+    \item Si $\mathbf{s} = ( 1 , 1 )^t$, hay una operación nula.
+    \item La operación inversa es escalar por $\mathbf{s} = (\frac{1}{s_x} , \frac{1}{s_y} )^t$.
+    \item La figura muestra un escalamiento por $\mathbf{s} = ( \frac{1}{2} , 2 )^t$.
 \end{itemize}
 \column[t]{0.5\textwidth}
 \begin{figure}[htp]
@@ -332,9 +333,9 @@ $$
 \begin{frame}{Composición de transformaciones afines}
 Las transformaciones afines, se pueden aplicar una después de otra. 
 \begin{itemize}
-    \item Esto se llama \alert{composición de transformaciones}
-    \item Y es particularmente útil que se haga con matrices
-    \item La multiplicación de matrices es asociativa 
+    \item Esto se llama \alert{composición de transformaciones}.
+    \item Y es particularmente útil que se haga con matrices.
+    \item La multiplicación de matrices es asociativa:
     $$T_1 T_2 T_3 \mathbf{x} = T_1 (T_2 (T_3 \mathbf{x})) = (T_1 T_2 T_3) \mathbf{x}$$
     \item La multiplicación de matrices no es conmutativa: 
     $$T_1 T_2 \mathbf{x} \neq T_2 T_1 \mathbf{x}$$
@@ -342,7 +343,7 @@ Las transformaciones afines, se pueden aplicar una después de otra.
 \end{frame}
 
 \begin{frame}{Ejemplo}
-Si $R$ fuera una rotación de $\frac{5\pi}{4}$ y $S$ escalameinto por $(\frac{1}{2}, 2)^t$
+Si $R$ fuera una rotación de $\frac{5\pi}{4}$ y $S$ escalameinto por $(\frac{1}{2}, 2)^t$.
 \begin{figure}[htp]
  \centering
  \begin{subfigure}[b]{0.25\textwidth}
@@ -370,7 +371,7 @@ Si $R$ fuera una rotación de $\frac{5\pi}{4}$ y $S$ escalameinto por $(\frac{1}
 \begin{alertblock}{En Shadertoy generalmente hacemos lo contrario}
     \begin{itemize}
         \item En shadertoy generalmente, trasformamos las coordenadas del fragment hacia la figura.
-        \item Esto es una consecuencia de usar las sdf y que tenemos las coordenadas del fragment fijas
+        \item Esto es una consecuencia de usar las sdf y que tenemos las coordenadas del fragment fijas.
         \item Esto es equivalente a decir que transformamos el espacio hacia la figura.
         \item Por lo tanto, para situar figuras en 2D usamos la matriz inversa de la matriz de trasformación.
     \end{itemize}
@@ -388,9 +389,9 @@ color = mix(Red, color, step(0.0, disCircle));
 \end{minted}
 \end{listing}
 \begin{itemize}
-    \item En este ejemplo se escala y luego se traslada una figura (circulo)
+    \item En este ejemplo se escala y luego se traslada una figura (circulo).
     \item Nótese la inversión de la matriz, antes de evaluar las sdf.
-    \item Y el uso de la función \mintinline{glsl}{step} dentro de la función \mintinline{glsl}{mix}, para cambiar el color del fragment si estaba dentro de la figura.
+    \item Y el uso de la función \mintinline{glsl}{step} dentro de la función. \mintinline{glsl}{mix}, para cambiar el color del fragment si estaba dentro de la figura.
 \end{itemize}
 \end{frame}
 
@@ -399,9 +400,9 @@ color = mix(Red, color, step(0.0, disCircle));
 \begin{columns}
 \column[t]{0.5\textwidth}
      \begin{itemize}
-         \item Usar transformaciones compuestas para crear una escena
-         \item Puedes utilizar la \href{https://iquilezles.org/articles/distfunctions2d/}{esta lista} para ver mas figuras
-         \item Puedes comenzar con el código del ejercicio anterior 
+         \item Usar transformaciones compuestas para crear una escena.
+         \item Puedes utilizar \href{https://iquilezles.org/articles/distfunctions2d/}{esta lista} para ver mas figuras.
+         \item Puedes comenzar con el código del ejercicio anterior.
      \end{itemize}
 \column[t]{0.5\textwidth}
         \begin{figure}[htb]

@@ -13,7 +13,7 @@ En realidad esta es un familia de algoritmos, los mas importantes son:
 
 \begin{frame}{El rayo}
 \begin{block}{Rayo}
-Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}$, donde $s \in \mathbf{R}^{+}$ es un escalar positivo, $\mathbf{o}$ es un punto en $\mathbb{R}^3$ y $|\mathbf{d}| = 1$ un vector unitario en $\mathbb{R}^3$. 
+Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}$, donde $s \in \mathbb{R}^{+}$ es un escalar positivo, $\mathbf{o}$ es un punto en $\mathbb{R}^3$ y $|\mathbf{d}| = 1$ un vector unitario en $\mathbb{R}^3$. 
 
 \end{block}
 
@@ -47,7 +47,7 @@ Esta técnica solo se puede usar si\ldots
     \item El rayo tiene un vector de dirección unitario.
     \item Las sdf están bien definidas:
     \begin{itemize}
-        \item Continuas
+        \item Continuas.
         \item La distancia esta en la misma dimensión que la escena.
     \end{itemize}    
 \end{itemize}
@@ -113,9 +113,9 @@ Donde $f(\mathbf{x})$ es una sdf y $\epsilon$ un numero positivo muy pequeño.
 \begin{columns}
 \column[t]{0.5\textwidth}
      \begin{itemize}
-         \item De momento usa solo una esfera en la escena
+         \item De momento, usa solo una esfera en la escena.
          \item Trata de definir tu cámara, la esfera y una fuente de luz, en lugares sencillos respecto al origen.
-         \item De momento usa la reflexión difusa, para que puedas visualizar al esfera
+         \item De momento usa la reflexión difusa, para que puedas visualizar al esfera.
          \item Puedes usar el código de comienzo de la escena para empezar.
      \end{itemize}
 \column[t]{0.5\textwidth}
@@ -131,10 +131,10 @@ Donde $f(\mathbf{x})$ es una sdf y $\epsilon$ un numero positivo muy pequeño.
 En lo que resta del taller vamos a añadir algunas cosas al ejemplo de Raymarching:
 
 \begin{enumerate}
-    \item Como manejar una escena con varios objetos
-    \item Como hacer un modelo de cámara mas robusto
-    \item El modelo de iluminación de Blin-Phong
-    \item \href{https://en.wikipedia.org/wiki/Constructive_solid_geometry}{Constructive solid geometry} gracias a las sdf
+    \item Como manejar una escena con varios objetos.
+    \item Como hacer un modelo de cámara mas robusto.
+    \item El modelo de iluminación de Blin-Phong.
+    \item \href{https://en.wikipedia.org/wiki/Constructive_solid_geometry}{Constructive solid geometry} gracias a las sdf.
 \end{enumerate}
 
 \end{frame}
@@ -252,7 +252,7 @@ En CG, la cámara esta definida con dos matrices:
 \begin{block}{}
  En nuestro caso la proyección esta implícita en el algoritmo de Ray Marching.
  \begin{itemize}
-   \item Solo nos hace falta construir la vista.
+   \item Solo nos hace falta construir la matriz de vista.
  \end{itemize}
 \end{block}
 \end{frame}
@@ -304,9 +304,9 @@ ray.direction = camRotation(cam) * normalize(vec3(coord.xy, -1.0));
 \column[t]{0.5\textwidth}
 \begin{itemize}
  \item En 1975 \href{https://en.wikipedia.org/wiki/Phong_reflection_model}{Bui Tuong Phong} desarolló un modelo de iluminación.
- \item La reflexion de la luz se divide en tres coponentes: ambiente, especular y difusso.
+ \item La reflexion de la luz se divide en tres coponentes: ambiente, difusso y especular.
  \item En 1977 \href{https://en.wikipedia.org/wiki/Blinn-Phong_reflection_model}{Jim Blinn}, modificó el calculo del componente especular para hacerlo mas estable y mas eficiente.
- \item Es el modelo de shading sencillo mas usado.
+ \item Es el modelo de \say{shading sencillo}, mas usado.
 \end{itemize}
 \column[t]{0.5\textwidth}
 \begin{figure}[htp]
@@ -404,8 +404,8 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
 \end{frame}
 
 \begin{frame}[fragile]{Signed distance functions en 3D}
-\begin{block}{Donde puedo buscar mas sdf}
-    El mejor lugar para buscar sdf es el \href{https://iquilezles.org/articles/distfunctions/}{sitio personal} de Inigo Quilez
+\begin{block}{¿Dónde puedo buscar mas sdf?}
+    El mejor lugar para buscar una sdf es el \href{https://iquilezles.org/articles/distfunctions/}{sitio personal} de Inigo Quilez
 \end{block}
 Para aumentar el poder de expresividad, puedes pasar un parámetro extra que sea la transformación afín.
 Para un cubo por ejemplo:
@@ -523,14 +523,14 @@ float sdCompousedShape(vec3 position) {
 
 \begin{figure}[htp]
  \centering
- \begin{subfigure}[b]{0.2\textwidth}
-   \includegraphics[width=\textwidth]{img/leftBox}
-   \caption{Cubo}
+\begin{subfigure}[b]{0.2\textwidth}
+   \includegraphics[width=\textwidth]{img/RightSphere}
+   \caption{Esfera}
  \end{subfigure}
 ~
  \begin{subfigure}[b]{0.2\textwidth}
-   \includegraphics[width=\textwidth]{img/RightSphere}
-   \caption{Esfera}
+   \includegraphics[width=\textwidth]{img/leftBox}
+   \caption{Cubo}
  \end{subfigure}
 ~
  \begin{subfigure}[b]{0.2\textwidth}

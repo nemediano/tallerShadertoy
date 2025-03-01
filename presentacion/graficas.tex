@@ -6,7 +6,7 @@
 \end{block}
     \begin{itemize}
         \item Originalmente estaba dedicado a hacer gráficos.
-        \item Ahora hace computo general, de hecho es el \href{https://en.wikipedia.org/wiki/AI_accelerator}{AI acelerator} mas usado actualmente.
+        \item Actualmente, hace computo general, de hecho es el \href{https://en.wikipedia.org/wiki/AI_accelerator}{AI acelerator} mas usado actualmente.
         \item No confundir con una tarjeta de video: Todas la tarjetas de video (actuales) tiene un GPU. Pero no todos los GPU están en tarjetas de video.
         \item Cuando un GPU esta físicamente separado del chip que tiene el CPU se le llama un GPU discreto.
      \end{itemize}
@@ -19,14 +19,14 @@
 Acerca del nombre:
     \begin{itemize}
         \item El termino fue acuñado por Pixar en 1988 para Renderman.
-        \item Originalmente (2001), los shaders solo hacian calculos de iluminacion: intensidad de la luz, color, sombras y brillos.
-        \item De ahí su nombre, que significa \emph{sombreado}
+        \item Originalmente (2001), los shaders solo hacian calculos de iluminación: intensidad de la luz, color, sombras y brillos.
+        \item De ahí su nombre, que significa \emph{sombreado}.
      \end{itemize}
 
 \end{frame}
 
 \begin{frame}{La pieza básica}
-\begin{block}{Pipeline gráfico}
+\begin{block}{Pipeline gráfico.}
     Es una abstracción de SW, que describe el proceso que debe seguir un programa para trasformar una escena tridimensional en una imagen.
 \end{block}
 \begin{figure}[htb]
@@ -68,14 +68,14 @@ Acerca del nombre:
 \begin{frame}[allowframebreaks]{Anatomía de una aplicación}
 Actualmente, una aplicación típica:
     \begin{itemize}
-        \item Esta escrita en un engine gráfico (Como \href{https://unity.com/}{Unity} o \href{https://www.unrealengine.com/}{Unreal})
+        \item Esta escrita en un engine gráfico (Como \href{https://unity.com/}{Unity} o \href{https://www.unrealengine.com/}{Unreal}).
         \item Para producir un frame, se usan cientos de pipelines.
         \begin{itemize}
-            \item Varios pipelines, producen resultados en texturas que luego otros pipelines consumen
-            \item Cada material de los objetos de la escena tiene su propio pipeline
-            \item Hay pipelines especializados en ciertas tareas (Sombras, reflexiones, iluminación, etc.)
-            \item Algunos son directos, otros diferidos, otros por mosaicos
-            \item Sin contar que muchos efectos se llevan a cabo en compute shaders
+            \item Varios pipelines, producen resultados en texturas que luego otros pipelines consumen.
+            \item Cada material de los objetos de la escena tiene su propio pipeline.
+            \item Hay pipelines especializados en ciertas tareas (Sombras, reflexiones, iluminación, etc.).
+            \item Algunos son directos, otros diferidos, otros por mosaicos.
+            \item Sin contar que muchos efectos se llevan a cabo en compute shaders.
         \end{itemize}
     \end{itemize}
     \begin{figure}[htb]
@@ -89,13 +89,13 @@ Actualmente, una aplicación típica:
 \column[t]{0.5\textwidth}
     Hay una tendencia importante hacia:
     \begin{itemize}
-        \item Unificar en el modelo de \href{https://en.wikipedia.org/wiki/Physically_based_rendering}{iluminación PBR}
-        \item Las técnicas basadas en rayos: \href{https://en.wikipedia.org/wiki/Ray_tracing_(graphics)}{Raytracer}, \href{https://en.wikipedia.org/wiki/Ray_marching}{Raymarching}, \href{https://en.wikipedia.org/wiki/Path_tracing}{Pathtracers}
+        \item Unificar en el modelo de \href{https://en.wikipedia.org/wiki/Physically_based_rendering}{iluminación PBR}.
+        \item Las técnicas basadas en rayos: \href{https://en.wikipedia.org/wiki/Ray_tracing_(graphics)}{Raytracer}, \href{https://en.wikipedia.org/wiki/Ray_marching}{Raymarching}, \href{https://en.wikipedia.org/wiki/Path_tracing}{Pathtracers}.
         \begin{itemize}
-            \item Generar parte de los fragments de un frame, \href{https://www.youtube.com/watch?v=5PHBXY0FI5o&t=2s}{usando técnicas de AI} en vez de calcularlos
+            \item Generar parte de los fragments de un frame, \href{https://www.youtube.com/watch?v=5PHBXY0FI5o&t=2s}{usando técnicas de AI} en vez de calcularlos.
         \end{itemize}
-        \item Definir un nuevo pipeline: Task (Amplification) shaders, \href{https://www.khronos.org/blog/mesh-shading-for-vulkan}{mesh shaders}
-        \item Descargar la mayor parte de la tareas en el \href{https://en.wikipedia.org/wiki/Compute_kernel}{compute shader}
+        \item Definir un nuevo pipeline: Task (Amplification) shaders, \href{https://www.khronos.org/blog/mesh-shading-for-vulkan}{mesh shaders}.
+        \item Descargar la mayor parte de la tareas en el \href{https://en.wikipedia.org/wiki/Compute_kernel}{compute shader}.
     \end{itemize}
 \column[t]{0.5\textwidth}
 \begin{figure}[htp]
