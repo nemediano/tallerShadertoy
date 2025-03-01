@@ -121,7 +121,7 @@ Donde $f(\mathbf{x})$ es una sdf y $\epsilon$ un numero positivo muy pequeño.
 \column[t]{0.5\textwidth}
         \begin{figure}[htb]
             \centering
-            \includegraphics[width=0.6\textwidth]{img/Ejer4}
+            \includegraphics[width=0.6\textwidth]{img/Ejer/Ejer4}
         \end{figure}
 \end{columns}
 \end{frame}
@@ -381,7 +381,167 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
 \column[t]{0.5\textwidth}
         \begin{figure}[htb]
             \centering
-            \includegraphics[width=0.6\textwidth]{img/Ejer5}
+            \includegraphics[width=0.6\textwidth]{img/Ejer/Ejer5}
         \end{figure}
 \end{columns}
 \end{frame}
+
+\subsection{Modelado geométrico usando las sdf}
+
+\begin{frame}{Transformaciones afines de 3D}
+\begin{itemize}
+    \item Las transformaciones afines se pueden generalizar a 3D.
+    \item La traslación y el escalamiento se generalizan de manera trivial.
+    \item La rotación en 3D, requiere de un parámetro extra: un \alert{vector} unitario que nos sirve de eje de rotación.
+    \begin{itemize}
+        \item La rotación sigue siendo con respecto al origen.
+        \item Recuerda, que los vectores son libres en el espacio.
+    \end{itemize}
+    \item Aquí solo usaremos una función que nos devuelve la matriz de rotación a partir de un angulo y un vector.
+    \item Puedes ver como se construye en el excelente libro: \href{https://mathweb.ucsd.edu/~sbuss/CourseWeb/Math155A_2019Winter/SecondEdDraft.pdf}{3D Computer Graphics: A mathematical approach with OpenGL}
+    
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Signed distance functions en 3D}
+\begin{block}{Donde puedo buscar mas sdf}
+    El mejor lugar para buscar sdf es el \href{https://iquilezles.org/articles/distfunctions/}{sitio personal} de Inigo Quilez
+\end{block}
+Para aumentar el poder de expresividad, puedes pasar un parámetro extra que sea la transformación afín.
+Para un cubo por ejemplo:
+\begin{listing}
+\begin{minted}{glsl}
+float sdBox(vec3 position, vec3 boxCenter, vec3 boxSizes) {
+  vec3 q = abs(position - boxCenter) - boxSizes;
+  return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0);
+}
+
+float sdBox(vec3 position, mat4 T) {
+  vec3 tPos = (inverse(T) * vec4(position, 1.0)).xyz;
+  vec3 q = abs(tPos) - vec3(1.0);
+  return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0);
+}
+\end{minted}
+\end{listing}
+
+\end{frame}
+
+\begin{frame}{Deformando el espacio}
+
+\begin{itemize}
+    \item Escalar \alert{deforma el espacio} y eso afecta las funciones de distancia.
+    \item El Ray Marching es mas tolerable a expandir el espacio que a contraer el espacio. Es decir, es \alert{posible} que escalar por números mayores que uno funcione.
+    \item Algunas sdf pueden escalarse directamente desde la formula. La Figura muestra una caja (cubo) escalado en: $(\frac{1}{2}, 1, \frac{1}{2})$ por ambos métodos.
+\end{itemize}
+
+\begin{figure}[htp]
+ \centering
+ \begin{subfigure}[b]{0.22\textwidth}
+   \includegraphics[width=\textwidth]{img/inestable}
+   \caption{Matriz}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.22\textwidth}
+   \includegraphics[width=\textwidth]{img/estable}
+   \caption{Formula}
+ \end{subfigure}
+\end{figure} 
+
+\end{frame}
+
+\begin{frame}{Constructive Solid Geometry}
+
+\begin{columns}
+\column[t]{0.5\textwidth}
+\begin{itemize}
+    \item La \href{https://en.wikipedia.org/wiki/Constructive_solid_geometry}{Constructive solid geometry} (CSG) es una forma de hacer modelado geométrico.
+    \item Se usan operaciones como unión, intersección, y diferencia.
+    \item Esta técnica es particularmente apropiada para usarse con Ray Marching y sdfs.
+\end{itemize}
+\column[t]{0.5\textwidth}
+        \begin{figure}[htb]
+            \centering
+            \includegraphics[width=0.6\textwidth]{img/cgsTree}
+        \end{figure}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}[fragile]{¿Cómo lo podemos usar nosotros?}
+Cuando usamos Ray Marching basado en sdf, prácticamente tenemos todo lo necesario.
+\begin{listing}
+\begin{minted}{glsl}
+float opUnion(float lhsd, float rhsd) {
+    return min(lhsd, rhsd);
+}
+
+float opSubtraction(float lhsd, float rhsd) {
+    return max(-lhsd, rhsd);
+}
+
+float opIntersection(float lhsd, float rhsd) {
+    return max(lhsd, rhsd);
+}
+\end{minted}
+\end{listing}
+Donde \mintinline{glsl}{lhs} y \mintinline{glsl}{rhs}, son las sdf de las dos formas a combinar.
+\end{frame}
+
+\begin{frame}[fragile]{Operaciones booleanas suaves}
+\begin{listing}
+\begin{minted}{glsl}
+float opSmoothUnion(float lhsd, float rhsd, float smoothFactor) {
+    float h = clamp(0.5 + 0.5 * (rhsd - lhsd) / smoothFactor, 0.0, 1.0);
+    return mix(rhsd, lhsd, h) - smoothFactor * h * (1.0 - h);
+}
+
+float opSmoothSubtraction(float lhsd, float rhsd, float smoothFactor) {
+    float h = clamp(0.5 - 0.5 * (rhsd + lhsd) / smoothFactor, 0.0, 1.0);
+    return mix(rhsd, -lhsd, h) + smoothFactor * h * (1.0 - h);
+}
+
+float opSmoothIntersection(float lhsd, float rhsd, float smoothFactor) {
+    float h = clamp(0.5 - 0.5 * (rhsd - lhsd) / smoothFactor, 0.0, 1.0);
+    return mix(rhsd, lhsd, h) + smoothFactor * h * (1.0 - h);
+}
+
+\end{minted}
+\end{listing}
+Donde \mintinline{glsl}{smoothFactor} es un factor (medido en la unidades de distancia de la escena), que nos dice cuanto hay que \alert{dilatar} el resultado de la operación.
+\end{frame}
+
+\begin{frame}[fragile]{Ejemplo: diferencia y la diferencia suave}
+\begin{listing}
+\begin{minted}{glsl}
+float sdCompousedShape(vec3 position) {
+    float sphereDis = sdSphere(position, vec3(0), 1.0);
+    float boxDis = sdBox(position, vec3(0.5, 0.0, 0.0), vec3(0.8));  
+    return opSmoothSubtraction(sphereDis, boxDis, 0.15);
+}
+\end{minted}
+\end{listing}
+
+\begin{figure}[htp]
+ \centering
+ \begin{subfigure}[b]{0.2\textwidth}
+   \includegraphics[width=\textwidth]{img/leftBox}
+   \caption{Cubo}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.2\textwidth}
+   \includegraphics[width=\textwidth]{img/RightSphere}
+   \caption{Esfera}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.2\textwidth}
+   \includegraphics[width=\textwidth]{img/Substraction}
+   \caption{Diferencia}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.2\textwidth}
+   \includegraphics[width=\textwidth]{img/SmoothSubstraction}
+   \caption{Diferencia suave: $0.15$}
+ \end{subfigure}
+\end{figure}
+\end{frame}
+
