@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=conclusion.tex
+lastDocument=presentacion.tex
 
 [document-settings,item:conclusion.tex]
 Bookmarks=
@@ -158,8 +158,8 @@ TextFolding=[]
 ViMarks=.,28,46,[,28,42,],28,46
 
 [view-settings,view=0,item:presentacion.tex]
-CursorColumn=14
-CursorLine=151
+CursorColumn=11
+CursorLine=138
 Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
