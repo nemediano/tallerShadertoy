@@ -1,0 +1,1849 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.5in"
+   height="14in"
+   viewBox="0 0 215.9 355.60001"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="colorGuide.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="cm"
+     showgrid="true"
+     inkscape:zoom="0.76420453"
+     inkscape:cx="87.018589"
+     inkscape:cy="762.2305"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4758-23">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Shapes"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4758"
+       transform="translate(-0.76325814)">
+      <g
+         id="g4291"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276"><tspan
+             sodipodi:role="line"
+             id="tspan4274"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">White</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280">G: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282">B: 100</tspan></text>
+      </g>
+      <g
+         id="g4291-0"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#c0c0c0;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Silver</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1">R: 75</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0">G: 75</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4">B: 75</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Gray</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3">R: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6">G: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9">B: 50</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Black</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8">B: 0</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-7"
+       transform="translate(-0.76325814,68.155994)">
+      <g
+         id="g4291-5"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-9"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-48"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-0"><tspan
+             sodipodi:role="line"
+             id="tspan4274-4"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Lime</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-5">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-04">G: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-6">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-9"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-4"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-86"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-3"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-6"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Green</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-6">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-3">G: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-0">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-9"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-8"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#00ffff;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-1"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-8"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-0"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Aqua / Cyan</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-6">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-9">G: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-4">B: 100</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-5"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-9"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#008080;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-4"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-9"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-2"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Teal</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-2">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-1">G: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-6">B: 50</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-0"
+       transform="translate(-0.76325814,34.077997)">
+      <g
+         id="g4291-6"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-2"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-0"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-6"><tspan
+             sodipodi:role="line"
+             id="tspan4274-41"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Red</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-6">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-7">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-7">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-51"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-7"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-9"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-4"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-62"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Maroon</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-7">R: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-0">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-90">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-98"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-9"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-3"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-0"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-7"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Yellow</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-2">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-7">G: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-3">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-2"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-5"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#808000;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-2"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-1"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-0"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Olive</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-7">R: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-8">G: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-0">B: 0</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-2"
+       transform="translate(-0.76325814,102.23399)">
+      <g
+         id="g4291-68"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-5"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-6"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-7"><tspan
+             sodipodi:role="line"
+             id="tspan4274-8"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Blue</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-55">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-4">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-62">B: 100</tspan></text>
+      </g>
+      <g
+         id="g4291-0-1"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-6"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#000080;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-1"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-2"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-0"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Navy</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-4">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-38">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-1">B: 50</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-8"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-6"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-6"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-5"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-1"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Fuchsia / Magenta</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-9">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-0">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-36">B: 100</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-1"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-6"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#800080;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-1"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-2"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-04"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Purple</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-4">R: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-3">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-4">B: 50</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-23"
+       transform="translate(-0.76325814,136.31199)">
+      <g
+         id="g4291-9"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-24"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ffc0cb;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-06"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-5"><tspan
+             sodipodi:role="line"
+             id="tspan4274-9"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Pink</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-4">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-78">G: 75</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-3">B: 80</tspan></text>
+      </g>
+      <g
+         id="g4291-0-17"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-5"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ff69b4;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-0"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-8"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-5"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">HotPink</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-8">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-4">G: 41</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-02">B: 71</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-6"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-1"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#dc143c;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-0"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-83"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-2"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Crimson</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-99">R: 86</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-2">G: 8</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-2">B: 24</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-6"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-0"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#fa8072;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-10"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-24"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-03"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Salmon</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-0">R: 98</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-5">G: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-2">B: 45</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-4"
+       transform="translate(-0.76325814,170.38999)">
+      <g
+         id="g4291-2"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-7"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ff4500;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-49"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-58"><tspan
+             sodipodi:role="line"
+             id="tspan4274-1"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">OrangeRed</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-68">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-2">G: 27</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-9">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-59"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-66"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ffa500;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-7"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-90"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-40"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Orange</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-5">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-2">G: 65</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-14">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-4"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-61"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ff7f50;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-8"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-1"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-04"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Coral</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-64">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-1">G: 50</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-6">B: 31</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-8"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-92"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ffd700;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-0"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-90"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-9"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Gold</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-1">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-6">G: 84</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-7">B: 0</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-03"
+       transform="translate(-0.76325814,204.46798)">
+      <g
+         id="g4291-51"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-1"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#f0e68c;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-3"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-4"><tspan
+             sodipodi:role="line"
+             id="tspan4274-88"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Khaki</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-47">R: 94</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-5">G: 90</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-70">B: 65</tspan></text>
+      </g>
+      <g
+         id="g4291-0-57"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-8"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#a0522d;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-3"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-15"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-627"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Sienna</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-06">R: 63</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-1">G: 32</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-06">B: 18</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-0"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-3"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#d2691e;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-7"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-3"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-5"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Chocolate</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-5">R: 82</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-3">G: 41</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-8">B: 12</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-3"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-1"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#cd853f;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-8"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-4"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-29"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Peru</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-3">R: 80</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-0">G: 52</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-64">B: 25</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-79"
+       transform="translate(-0.76325814,238.54598)">
+      <g
+         id="g4291-69"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-4"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#9400d3;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-05"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-79"><tspan
+             sodipodi:role="line"
+             id="tspan4274-0"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">DarkViolet</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-53">R: 58</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-3">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-0">B: 83</tspan></text>
+      </g>
+      <g
+         id="g4291-0-14"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-94"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#4b0082;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-03"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-30"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-9"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Indigo</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-58">R: 29</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-25">G: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-97">B: 51</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-984"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-0"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#00bfff;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-07"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-9"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-3"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">DeepSkyBlue</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-3">R: 0</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-35">G: 75</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-30">B: 100</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-4"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-96"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#87cefa;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-5"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-12"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-6"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">LightSkyBlue</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-47">R: 53</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-7">G: 81</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-23">B: 98</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-79-6"
+       transform="translate(-1.0386592,272.4756)">
+      <g
+         id="g4291-69-4"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-4-4"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#20b2aa;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-05-4"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-79-9"><tspan
+             sodipodi:role="line"
+             id="tspan4274-0-7"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">LightSeaGreen</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-53-7">R: 13</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-3-9">G: 70</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-0-4">B: 77</tspan></text>
+      </g>
+      <g
+         id="g4291-0-14-0"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-94-6"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#32cd32;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-03-6"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-30-3"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-9-9"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">LimeGreen</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-58-2">R: 20</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-25-0">G: 80</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-97-5">B: 20</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-984-8"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-0-1"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#7cfc00;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-07-2"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-9-9"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-3-5"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">LawnGreen</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-3-6">R: 49</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-35-1">G: 99</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-30-2">B: 0</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-4-0"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-96-9"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#fffff0;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-5-0"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-12-5"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-6-2"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Ivory</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-47-2">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-7-2">G: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-23-0">B: 94</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g4758-79-6-2"
+       transform="translate(-1.0386595,306.40521)">
+      <g
+         id="g4291-69-4-6"
+         transform="matrix(0.83816897,0,0,0.82348204,-20.428134,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-4-4-8"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#dda0dd;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-05-4-9"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-79-9-4"><tspan
+             sodipodi:role="line"
+             id="tspan4274-0-7-7"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Plum</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-53-7-4">R: 87</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-3-9-5">G: 63</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-0-4-9">B: 87</tspan></text>
+      </g>
+      <g
+         id="g4291-0-14-0-9"
+         transform="matrix(0.83816897,0,0,0.82348204,32.197394,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-94-6-3"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#ffe4c4;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-03-6-1"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-30-3-2"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-9-9-2"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">Bisque</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-58-2-4">R: 100</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-25-0-6">G: 89</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-97-5-9">B: 77</tspan></text>
+      </g>
+      <g
+         id="g4291-0-5-984-8-5"
+         transform="matrix(0.83816897,0,0,0.82348204,84.822922,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-0-0-1-1"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#8fbc8f;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-8-07-2-0"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-1-9-9-9"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-2-3-5-7"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">DarkSeaGreen</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-3-3-6-4">R: 56</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-6-35-1-6">G: 74</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-9-30-2-5">B: 56</tspan></text>
+      </g>
+      <g
+         id="g4291-0-3-4-0-6"
+         transform="matrix(0.83816897,0,0,0.82348204,137.44845,-30.097932)">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4218-6-9-96-9-7"
+           width="58.857498"
+           height="35.314495"
+           x="30.467411"
+           y="43.277573" />
+        <ellipse
+           style="fill:#f5f5f5;fill-opacity:1;stroke:#000000;stroke-width:0.848969;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path4272-4-4-5-0-6"
+           cx="72.3601"
+           cy="65.435684"
+           rx="10.462133"
+           ry="10.115912" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Arial;-inkscape-font-specification:Arial;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="34.968277"
+           y="50.894428"
+           id="text4276-3-9-12-5-7"><tspan
+             sodipodi:role="line"
+             id="tspan4274-3-4-6-2-7"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="50.894428">WhiteSmoke</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="58.831928"
+             id="tspan4278-1-0-47-2-0">R: 96</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="66.769424"
+             id="tspan4280-0-8-7-2-8">G: 96</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+             x="34.968277"
+             y="74.706924"
+             id="tspan4282-4-8-23-0-1">B: 96</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

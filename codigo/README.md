@@ -2,7 +2,8 @@
 
 Todo el código en este folder está escrito en [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)), pero al ser este un taller de [Shadertoy](https://www.shadertoy.com/) requiere la infraestructura del sitio para funcionar correctamente.
 
-Es decir puedes copiar y pegar en los respectivos tabuladores dentro del navegador y debería de funcionar. Sin embargo, si lo quieres usar como parte de una standalone app de [OpenGL](https://www.opengl.org/) o [Vulkan](https://www.vulkan.org/), deberás adaptar el código a tus necesidades.
+Es decir puedes copiar y pegar en las respectivas secciones (tabuladores) en el sitio de Shadertoy y debería de funcionar.
+Sin embargo, si lo quieres usar como parte de una standalone app de [OpenGL](https://www.opengl.org/) o [Vulkan](https://www.vulkan.org/), deberás adaptar el código a tus necesidades.
 
 Recuerda que hay varias maneras de resolver cada ejercicio, dado que esto es programación creativa.
 Es decir, las respuestas aquí presentadas son solo una de varias maneras de llegar al resultado.
@@ -17,18 +18,18 @@ Este ejercicio sirve para familiarizarte con el editor de ShaderToy.
 Este ejercicio sirve para aprender a organizar tu código al menos en dos archivos (Image y Common).
 Puedes empezar tambien desde el codigo de default de shadertoy
 En teoría debes de:
-* Usar la siguiente tabla de colores como constante para el ejercicio.
+* Usar la siguiente [tabla de colores](../plantillas/colorGuide.svg) como constantes para el ejercicio.
 * Transformar las coordenadas a coordenadas del mundo
 * Abstraer el fondo en una función aparte de la escena
-* Deber de usar las signed distance functions de un círculo y de un cuadrado.
+* Usar las signed distance functions de un círculo y de un cuadrado.
 
 # [Ejercicio 3: Transformaciones afines](Ejercicio3)
 Este ejercicio sirve como ejemplo para aprender el uso de transformaciones afines.
-Puedes usar el final del ejercicio anterior
+Puedes usar el final del ejercicio anterior como empiezo.
 * Debes de crear una escena en 2D con varias figuras escaladas, rotadas y trasladadas
 * Idealmente alguna animación
 * Tener algún tipo de efecto para el fondo de la escena
-* Entender cómo funciona el “algoritmo del pintor” (que figura esta encima de que otra)
+* Entender cómo funciona el “algoritmo del pintor” (¿Qué figura esta encima de que otra?)
 
 # [Ejercicio 4: Esfera usando Ray Marching](Ejercicio4)
 La idea de este ejercicio es hacer una primera implementación de Ray marching
@@ -43,3 +44,4 @@ La idea de este ejercicio es mejorar la implementación anterior de RayMarching 
 * Lógica para desplegar varios objetos en la escena, uno de ellos un piso.
 * La cámara se define con el modelo LookAt. Idealmente una cámara que gire alrededor de la escena.
 * Utilice el algoritmo de [https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_reflection_model](Blinn–Phong) para hacer el shading
+

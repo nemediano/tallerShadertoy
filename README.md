@@ -13,6 +13,7 @@ Que contiene todo el código fuente, que se mostró en el taller, así como los 
 
 Dado que es un taller de [Shadertoy](https://www.shadertoy.com/) todo el código está escrito en [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL)) y requiere de la infraestructura del sitio web para funcionar.
 
-Es decir, debes de poder copiar y pegar el código en ventanas del navegador y debería de funcionar.
+Es decir, debes copiar y pegar el código en la ventana del navegador del sitio en su correspondiente sección y debería de funcionar.
 
 Las diapositivas están bajo una licencia creative commons, mientras que el código está bajo una licencia GNU/GPL.
+
