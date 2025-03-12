@@ -16,7 +16,7 @@ Todo lo necesario para este taller esta en este repositorio:
 \end{frame}
 
 \begin{frame}{Últimos detalles}
-En shadertoy, la ejecución inicia y termina con la función:
+En Shadertoy, la ejecución inicia y termina con la función:
 
 \mintinline{glsl}{void mainImage(out vec4 fragColor, in vec2 fragCoord)}.
 
@@ -336,9 +336,9 @@ Las transformaciones afines, se pueden aplicar una después de otra.
     \item Esto se llama \alert{composición de transformaciones}.
     \item Y es particularmente útil que se haga con matrices.
     \item La multiplicación de matrices es asociativa:
-    $$T_1 T_2 T_3 \mathbf{x} = T_1 (T_2 (T_3 \mathbf{x})) = (T_1 T_2 T_3) \mathbf{x}$$
+    $$ T_3 (T_2 (T_1 \mathbf{x})) = (T_3 T_2 T_1) \mathbf{x} = T_3 T_2 T_1 \mathbf{x}$$
     \item La multiplicación de matrices no es conmutativa: 
-    $$T_1 T_2 \mathbf{x} \neq T_2 T_1 \mathbf{x}$$
+    $$T_2 T_1 \mathbf{x} \neq T_1 T_2 \mathbf{x}$$
 \end{itemize}
 \end{frame}
 
@@ -366,11 +366,11 @@ Si $R$ fuera una rotación de $\frac{5\pi}{4}$ y $S$ escalameinto por $(\frac{1}
 \begin{frame}{Transformaciones afines en Shadertoy}
 \begin{itemize}
     \item La explicación anterior es como se hacen las gráficas tradicionalmente.
-    \item Es decir, transformamos la geométrica para acomodarla en el espacio.
+    \item Es decir, transformamos la figura para acomodarla en el espacio.
 \end{itemize}
 \begin{alertblock}{En Shadertoy generalmente hacemos lo contrario}
     \begin{itemize}
-        \item En shadertoy generalmente, trasformamos las coordenadas del fragment hacia la figura.
+        \item En Shadertoy generalmente, transformamos las coordenadas del fragment hacia la figura.
         \item Esto es una consecuencia de usar las sdf y que tenemos las coordenadas del fragment fijas.
         \item Esto es equivalente a decir que transformamos el espacio hacia la figura.
         \item Por lo tanto, para situar figuras en 2D usamos la matriz inversa de la matriz de trasformación.
@@ -391,7 +391,7 @@ color = mix(Red, color, step(0.0, disCircle));
 \begin{itemize}
     \item En este ejemplo se escala y luego se traslada una figura (circulo).
     \item Nótese la inversión de la matriz, antes de evaluar las sdf.
-    \item Y el uso de la función \mintinline{glsl}{step} dentro de la función. \mintinline{glsl}{mix}, para cambiar el color del fragment si estaba dentro de la figura.
+    \item Y el uso de la función \mintinline{glsl}{step} dentro de la función \mintinline{glsl}{mix}, para cambiar el color del fragment si estaba dentro de la figura.
 \end{itemize}
 \end{frame}
 

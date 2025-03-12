@@ -5,7 +5,7 @@ En realidad esta es un familia de algoritmos, los mas importantes son:
 \begin{itemize}
     \item \href{https://en.wikipedia.org/wiki/Ray_casting}{Ray Casting:} El primero en ser desarrollado. Consiste en lanzar un rayo por cada pixel del viewport. Para ver donde interfecta la escena.
     \item \href{https://en.wikipedia.org/wiki/Ray_tracing_(graphics)}{Ray Tracing:} Una generalización donde cada vez que se intersecta la escena, se calcula el angulo de reflexión y se continua siguiendo el rayo, hasta cumplir algún criterio de paro.
-    \item \href{https://en.wikipedia.org/wiki/Ray_marching}{Ray Marching:} Una forma de usar la sdf, para acelerar el camino de los rayos de manera recursiva. Este es el mas usado en ShaderToy
+    \item \href{https://en.wikipedia.org/wiki/Ray_marching}{Ray Marching:} Una forma de usar las sdf, para acelerar el camino de los rayos de manera recursiva. Éste es el mas usado en Shadertoy
     \item \href{https://en.wikipedia.org/wiki/Path_tracing}{Path Tracing:} En vez de lanzar un rayo, se lanzan varios rayos a ángulos muy similares usando el método de Monte Carlo.
 \end{itemize}
 
@@ -13,7 +13,7 @@ En realidad esta es un familia de algoritmos, los mas importantes son:
 
 \begin{frame}{El rayo}
 \begin{block}{Rayo}
-Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}$, donde $s \in \mathbb{R}^{+}$ es un escalar positivo, $\mathbf{o}$ es un punto en $\mathbb{R}^3$ y $|\mathbf{d}| = 1$ un vector unitario en $\mathbb{R}^3$. 
+Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}$, donde $s \in \mathbb{R}^{+}$ es un escalar no negativo, $\mathbf{o}$ es un punto en $\mathbb{R}^3$ y $|\mathbf{d}| = 1$ un vector unitario en $\mathbb{R}^3$.
 
 \end{block}
 
@@ -33,7 +33,7 @@ Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}
 \end{frame}
 
 \begin{frame}{Ray Marching}
-Es una técnica para hacer un avance adaptativo de lo rayos.
+Es una técnica para hacer un avance adaptativo de los rayos.
 \begin{enumerate}
     \item En el punto actual del rayo calcula la distancia $d$ del punto con respecto a la escena.
     La \emph{distancia} de la escena, es la mínima de todas las sdfs a las figuras en la escena.
@@ -102,9 +102,9 @@ f(x, y, z + \epsilon) - f(x, y, z - \epsilon)
 \end{pmatrix}$$
 Donde $f(\mathbf{x})$ es una sdf y $\epsilon$ un numero positivo muy pequeño.
 \begin{itemize}
-    \item Finalmente, si definimos una fuente de luz, con una posición $\mathbf{l}$ en la escena.
-    \item Una forma muy sencilla de shading puede ser: $c = \max(\mathbf{k}_d (\mathbf{l} \cdot \mathbf{n}), \mathbf{0})$.
-    \item Donde $\mathbf{c}$ es el color resultante y $\mathbf{k}_s$ es el color predominante de la superficie.
+    \item Finalmente, si definimos una fuente de luz, con una posición al que el vector $\mathbf{l}$ apunta.
+    \item Una forma muy sencilla de shading puede ser: $\mathbf{c} = \max(\mathbf{k}_d (\mathbf{l} \cdot \mathbf{n}), \mathbf{0})$.
+    \item Donde $\mathbf{c}$ es el color resultante y $\mathbf{k}_d$ es el color predominante de la superficie.
 \end{itemize}
 \end{frame}
 
@@ -336,15 +336,15 @@ ray.direction = camRotation(cam) * normalize(vec3(coord.xy, -1.0));
 
 \begin{frame}{¿Cómo se calcula la reflexión?}
 La reflexión de la luz (color) de un punto en la superficie se calcula como:
- $$\mathbf{L}_a \mathbf{K}_a + \mathbf{L}_d \mathbf{K}_d (\mathbf{n} \cdot \mathbf{l}) + \mathbf{L}_s \mathbf{K}_s (\mathbf{v} \cdot \mathbf{h})^{\alpha}$$
+ $$\mathbf{L}_a \mathbf{k}_a + \mathbf{L}_d \mathbf{k}_d (\mathbf{n} \cdot \mathbf{l}) + \mathbf{L}_s \mathbf{k}_s (\mathbf{v} \cdot \mathbf{h})^{\alpha}$$
  En donde:
  \begin{itemize}
-  \item $\mathbf{L}$ son los tres colores (ambiente, difuso y especular) de la luz 
-  \item $\mathbf{K}$ son los tres colores (ambiente, difuso y especular) del material.
-  \item $\alpha$ es la constante del brillo del material
-  \item $\mathbf{n}$ la normal a la superficie en el punto
-  \item $\mathbf{l}$ un vector unitario que apunta a la fuente de luz desde el punto
-  \item $\mathbf{v}$ un vector unitario que apunta a la camara desde el punto
+  \item $\mathbf{L}$ son los tres colores (ambiente, difuso y especular) de la luz.
+  \item $\mathbf{k}$ son los tres colores (ambiente, difuso y especular) del material.
+  \item $\alpha$ es la constante del brillo del material.
+  \item $\mathbf{n}$ la normal a la superficie en el punto.
+  \item $\mathbf{l}$ un vector unitario que apunta a la fuente de luz desde el punto.
+  \item $\mathbf{v}$ un vector unitario que apunta a la camara desde el punto.
   \item $\mathbf{h} = \frac{\mathbf{l} + \mathbf{v}}{|\mathbf{l} + \mathbf{v}|}$ un vector unitario, llamado \say{halfway vector}.
  \end{itemize}
 \end{frame}
@@ -352,9 +352,9 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
 
 \begin{frame}{Detalles de implementación}
 \begin{itemize}
-  \item A cada objeto de la escena se le asiga un material en vez de un color
+  \item A cada objeto de la escena se le asiga un material en vez de un color.
   \item En escenas simples, se aconseja definir la luz como blanco intenso; para evitar complicaciones.
-   \item El material esta formado por tres colores ($\mathbf{K}_a, \mathbf{K}_d, \mathbf{K}_s$) y un escalar ($\alpha$)
+   \item El material esta formado por tres colores $\mathbf{k}_a, \mathbf{k}_d, \mathbf{k}_s$ y un escalar ($\alpha$).
    \item Usualmente restringimos $\alpha \in [ 0.5, 128 ]$, y cuando experimenatmos, la variamos logaritmicamente.
   \begin{itemize}
    \item Un $\alpha$ grande produce brillos pequeños y concentrados.
@@ -364,7 +364,7 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
   \item Si hay mas de una luz en la escena:
   \begin{itemize}
    \item Se calcula el componente normal una vez.
-   \item Y los componentes difuso y especular una vez por cada luz, acumulando (sumando) el resultado
+   \item Y los componentes difuso y especular una vez por cada luz, acumulando (sumando) el resultado,
   \end{itemize}
 \end{itemize}
 \end{frame}

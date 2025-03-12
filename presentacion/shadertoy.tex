@@ -22,7 +22,7 @@ Todo empezó con una \href{https://iquilezles.org/articles/nvscene2008/rwwtt.pdf
 \begin{itemize}
     \item Es similar a como se hacían los gráficos antes de que tuviéramos tarjetas de video.
     \item Solo que ahora aprovechamos el \alert{inmenso poder paralelo} del GPU.
-    \item Y usamos GLSL.
+    \item Y usamos un lenguaje de alto nivel (como GLSL).
 \end{itemize}
 \end{frame}
 
@@ -31,7 +31,7 @@ Todo empezó con una \href{https://iquilezles.org/articles/nvscene2008/rwwtt.pdf
   \centering
   \includegraphics[width=0.4\textwidth]{img/onetriangle}
 \end{figure}
-De hecho podemos hacerlo con un solo triángulo y luego hacemos clipping.
+De hecho podemos hacerlo con un solo triángulo (y dejamos que el driver haga clipping).
 \end{frame}
 
 \begin{frame}{Actualmente, es mejor hacer:}
@@ -81,12 +81,12 @@ Shadertoy:
 \end{itemize}
 Pero ten por seguro que:
 \begin{block}{}
-    Cualquier shader que funciona en shadertoy, puede ser \alert{portado} y funcionar en cualquier otro entorno que pueda desplegar gráficos.
+    Cualquier shader que funciona en Shadertoy, puede ser \alert{portado} y funcionar en cualquier otro entorno que pueda desplegar gráficos.
 \end{block}
 Adicionalmente:
 \begin{itemize}{}
     \item Hay muchos entornos de programación, que emulan Shadertoy.
-    \item Siempre puedes escribir tu propio programa que ejecute shaders de shadertoy.
+    \item Siempre puedes escribir tu propio programa que ejecute shaders de Shadertoy.
 \end{itemize}
 \begin{block}{}
     No es tan difícil, cualquier alumno que haya tomado una clase de CG puede hacerlo fácilmente.

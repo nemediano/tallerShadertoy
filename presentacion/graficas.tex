@@ -6,7 +6,7 @@
 \end{block}
     \begin{itemize}
         \item Originalmente estaba dedicado a hacer gráficos.
-        \item Actualmente, hace computo general, de hecho es el \href{https://en.wikipedia.org/wiki/AI_accelerator}{AI acelerator} mas usado actualmente.
+        \item Actualmente, hace computo general, de hecho es el \href{https://en.wikipedia.org/wiki/AI_accelerator}{AI acelerator} mas usado.
         \item No confundir con una tarjeta de video: Todas la tarjetas de video (actuales) tiene un GPU. Pero no todos los GPU están en tarjetas de video.
         \item Cuando un GPU esta físicamente separado del chip que tiene el CPU se le llama un GPU discreto.
      \end{itemize}
@@ -38,7 +38,7 @@ Acerca del nombre:
 \begin{frame}{Simplificando\ldots}
 \begin{itemize}
     \item El la práctica, los tesselation shaders y los geometry shaders solo se usan para cosas muy especificas.
-    \item Mas aún, casi nunca se configuran los estados entre el vertex shader y la rasterización
+    \item Mas aún, casi nunca se configuran los estados entre el vertex shader y la rasterización.
     \item Para propósitos de esta explicación, podemos pensarlo de manera mas simple:    
 \end{itemize}
 \begin{figure}[htb]
@@ -90,12 +90,12 @@ Actualmente, una aplicación típica:
     Hay una tendencia importante hacia:
     \begin{itemize}
         \item Unificar en el modelo de \href{https://en.wikipedia.org/wiki/Physically_based_rendering}{iluminación PBR}.
-        \item Las técnicas basadas en rayos: \href{https://en.wikipedia.org/wiki/Ray_tracing_(graphics)}{Raytracer}, \href{https://en.wikipedia.org/wiki/Ray_marching}{Raymarching}, \href{https://en.wikipedia.org/wiki/Path_tracing}{Pathtracers}.
+        \item Las técnicas basadas en rayos: \href{https://en.wikipedia.org/wiki/Path_tracing}{Pathtracers}.
         \begin{itemize}
-            \item Generar parte de los fragments de un frame, \href{https://www.youtube.com/watch?v=5PHBXY0FI5o&t=2s}{usando técnicas de AI} en vez de calcularlos.
+            \item Generar parte de los fragments de un frame (o inlcuso frames completos), \href{https://www.youtube.com/watch?v=5PHBXY0FI5o&t=2s}{usando técnicas de AI} en vez de calcularlos.
         \end{itemize}
-        \item Definir un nuevo pipeline: Task (Amplification) shaders, \href{https://www.khronos.org/blog/mesh-shading-for-vulkan}{mesh shaders}.
-        \item Descargar la mayor parte de la tareas en el \href{https://en.wikipedia.org/wiki/Compute_kernel}{compute shader}.
+        \item Definir un nuevo pipeline: Task (Amplification) shaders, \href{https://www.khronos.org/blog/mesh-shading-for-vulkan}{Mesh shaders}.
+        \item Descargar la mayor parte de las tareas en el \href{https://en.wikipedia.org/wiki/Compute_kernel}{Compute shader}.
     \end{itemize}
 \column[t]{0.5\textwidth}
 \begin{figure}[htp]
