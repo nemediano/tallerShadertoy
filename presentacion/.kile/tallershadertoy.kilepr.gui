@@ -126,12 +126,12 @@ open=false
 order=-1
 
 [view-settings,view=0,item:conclusion.tex]
-CursorColumn=119
-CursorLine=42
+CursorColumn=162
+CursorLine=156
 Dynamic Word Wrap=true
 JumpList=
-TextFolding={"checksum":"6f1011e939c5612ccd422f8d25eb9ab8115447de","ranges":[]}
-ViMarks=.,198,25,[,198,24,],198,25
+TextFolding={"checksum":"a357da89418fb1102672ed888dbd024d63fa1f56","ranges":[]}
+ViMarks=.,199,25,[,199,24,],199,25
 
 [view-settings,view=0,item:glsl.tex]
 CursorColumn=62
