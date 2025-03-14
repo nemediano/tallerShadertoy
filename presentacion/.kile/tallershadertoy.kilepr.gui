@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=conclusion.tex
+lastDocument=presentacion.tex
 
 [document-settings,item:conclusion.tex]
 Bookmarks=
@@ -86,7 +86,7 @@ Mode=LaTeX
 Mode Set By User=false
 
 [item:conclusion.tex]
-open=true
+open=false
 order=0
 
 [item:glsl.tex]
@@ -102,7 +102,7 @@ open=false
 order=3
 
 [item:presentacion.tex]
-open=false
+open=true
 order=0
 
 [item:shaders.tex]
@@ -158,12 +158,12 @@ TextFolding={"checksum":"ea162f7e6725d2b6e4c7340ac828316c7bf1cc45","ranges":[]}
 ViMarks=.,28,46,[,28,42,],28,46
 
 [view-settings,view=0,item:presentacion.tex]
-CursorColumn=11
-CursorLine=138
+CursorColumn=17
+CursorLine=69
 Dynamic Word Wrap=false
 JumpList=
-TextFolding={"checksum":"2487ed1f7d3e9e96425be4cbe722b240967d1d53","ranges":[]}
-ViMarks=.,147,43,[,147,42,],147,43
+TextFolding=[]
+ViMarks=.,69,17,[,69,17,],69,17
 
 [view-settings,view=0,item:shaders.tex]
 CursorColumn=11
@@ -194,5 +194,5 @@ CursorColumn=38
 CursorLine=83
 Dynamic Word Wrap=false
 JumpList=
-TextFolding={"checksum":"f945c5326222d03fb24e33809f023bb0558e7152","ranges":[]}
+TextFolding=[]
 ViMarks=.,85,14,[,85,14,],85,14
