@@ -5,8 +5,8 @@ En realidad esta es un familia de algoritmos, los mas importantes son:
 \begin{itemize}
     \item \href{https://en.wikipedia.org/wiki/Ray_casting}{Ray Casting:} El primero en ser desarrollado. Consiste en lanzar un rayo por cada pixel del viewport. Para ver donde interfecta la escena.
     \item \href{https://en.wikipedia.org/wiki/Ray_tracing_(graphics)}{Ray Tracing:} Una generalización donde cada vez que se intersecta la escena, se calcula el angulo de reflexión y se continua siguiendo el rayo, hasta cumplir algún criterio de paro.
-    \item \href{https://en.wikipedia.org/wiki/Ray_marching}{Ray Marching:} Una forma de usar las sdf, para acelerar el camino de los rayos de manera recursiva. Éste es el mas usado en Shadertoy
-    \item \href{https://en.wikipedia.org/wiki/Path_tracing}{Path Tracing:} En vez de lanzar un rayo, se lanzan varios rayos a ángulos muy similares usando el método de Monte Carlo.
+    \item \href{https://en.wikipedia.org/wiki/Ray_marching}{Ray Marching:} Un caso particular del anterior. Una forma de usar las sdf, para acelerar el camino de los rayos de manera recursiva. Éste es el mas usado en Shadertoy.
+    \item \href{https://en.wikipedia.org/wiki/Path_tracing}{Path Tracing:} En vez de lanzar un rayo, se lanzan varios rayos a varios ángulos usando el método de Monte Carlo.
 \end{itemize}
 
 \end{frame}
@@ -363,7 +363,7 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
   \item Dado que no se puede \say{restar luz}, los productos puntos $\mathbf{n} \cdot \mathbf{l}$ y $\mathbf{v} \cdot \mathbf{h}$ deben ser no negativos.
   \item Si hay mas de una luz en la escena:
   \begin{itemize}
-   \item Se calcula el componente normal una vez.
+   \item Se calcula el componente ambiental una vez.
    \item Y los componentes difuso y especular una vez por cada luz, acumulando (sumando) el resultado,
   \end{itemize}
 \end{itemize}
