@@ -13,7 +13,7 @@ En realidad esta es un familia de algoritmos, los mas importantes son:
 
 \begin{frame}{El rayo}
 \begin{block}{Rayo}
-Un rayo es el semisegemento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}$, donde $s \in \mathbb{R}^{+}$ es un escalar no negativo, $\mathbf{o}$ es un punto en $\mathbb{R}^3$ y $|\mathbf{d}| = 1$ un vector unitario en $\mathbb{R}^3$.
+Un rayo es el semisegmento de linea $\mathbf{r}(s) = \mathbf{o} + s  \mathbf{d}$, donde $s \in \mathbb{R}^{+}$ es un escalar no negativo, $\mathbf{o}$ es un punto en $\mathbb{R}^3$ y $|\mathbf{d}| = 1$ un vector unitario en $\mathbb{R}^3$.
 
 \end{block}
 
@@ -303,8 +303,8 @@ ray.direction = camRotation(cam) * normalize(vec3(coord.xy, -1.0));
 \begin{columns}
 \column[t]{0.5\textwidth}
 \begin{itemize}
- \item En 1975 \href{https://en.wikipedia.org/wiki/Phong_reflection_model}{Bui Tuong Phong} desarolló un modelo de iluminación.
- \item La reflexion de la luz se divide en tres coponentes: ambiente, difusso y especular.
+ \item En 1975 \href{https://en.wikipedia.org/wiki/Phong_reflection_model}{Bui Tuong Phong} desarrolló un modelo de iluminación.
+ \item La reflexión de la luz se divide en tres componentes: ambiente, difuso y especular.
  \item En 1977 \href{https://en.wikipedia.org/wiki/Blinn-Phong_reflection_model}{Jim Blinn}, modificó el calculo del componente especular para hacerlo mas estable y mas eficiente.
  \item Es el modelo de \say{shading sencillo}, mas usado.
 \end{itemize}
@@ -344,7 +344,7 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
   \item $\alpha$ es la constante del brillo del material.
   \item $\mathbf{n}$ la normal a la superficie en el punto.
   \item $\mathbf{l}$ un vector unitario que apunta a la fuente de luz desde el punto.
-  \item $\mathbf{v}$ un vector unitario que apunta a la camara desde el punto.
+  \item $\mathbf{v}$ un vector unitario que apunta a la cámara desde el punto.
   \item $\mathbf{h} = \frac{\mathbf{l} + \mathbf{v}}{|\mathbf{l} + \mathbf{v}|}$ un vector unitario, llamado \say{halfway vector}.
  \end{itemize}
 \end{frame}
@@ -352,10 +352,10 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
 
 \begin{frame}{Detalles de implementación}
 \begin{itemize}
-  \item A cada objeto de la escena se le asiga un material en vez de un color.
+  \item A cada objeto de la escena se le asigna un material en vez de un color.
   \item En escenas simples, se aconseja definir la luz como blanco intenso; para evitar complicaciones.
    \item El material esta formado por tres colores $\mathbf{k}_a, \mathbf{k}_d, \mathbf{k}_s$ y un escalar ($\alpha$).
-   \item Usualmente restringimos $\alpha \in [ 0.5, 128 ]$, y cuando experimenatmos, la variamos logaritmicamente.
+   \item Usualmente restringimos $\alpha \in [ 0.5, 128 ]$, y cuando experimentamos, la variamos logarítmicamente.
   \begin{itemize}
    \item Un $\alpha$ grande produce brillos pequeños y concentrados.
    \item Un $\alpha$ pequeño produce brillos grandes y débiles.
@@ -405,7 +405,7 @@ La reflexión de la luz (color) de un punto en la superficie se calcula como:
 
 \begin{frame}[fragile]{Signed distance functions en 3D}
 \begin{block}{¿Dónde puedo buscar mas sdf?}
-    El mejor lugar para buscar una sdf es el \href{https://iquilezles.org/articles/distfunctions/}{sitio personal} de Inigo Quilez
+    El mejor lugar para buscar una sdf es el \href{https://iquilezles.org/articles/distfunctions/}{sitio personal} de Iñigo Quilez
 \end{block}
 Para aumentar el poder de expresividad, puedes pasar un parámetro extra que sea la transformación afín.
 Para un cubo por ejemplo:

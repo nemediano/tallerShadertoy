@@ -13,7 +13,7 @@ La primera vez, para compilar desde cero, se puede hacer:
 1. Ejecutar XeLaTeX
 1. Ver el pdf
 
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 Esta obra está bajo una
 [Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional][cc-by-nc-sa].

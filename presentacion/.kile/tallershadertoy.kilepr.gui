@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=conclusion.tex
+lastDocument=shaders3d.tex
 
 [document-settings,item:conclusion.tex]
 Bookmarks=
@@ -86,11 +86,11 @@ Mode=LaTeX
 Mode Set By User=false
 
 [item:conclusion.tex]
-open=true
+open=false
 order=2
 
 [item:glsl.tex]
-open=true
+open=false
 order=1
 
 [item:graficas.tex]
@@ -126,40 +126,40 @@ open=false
 order=-1
 
 [view-settings,view=0,item:conclusion.tex]
-CursorColumn=31
-CursorLine=30
+CursorColumn=11
+CursorLine=195
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
 ViMarks=.,30,29,[,30,25,],30,29
 
 [view-settings,view=0,item:glsl.tex]
-CursorColumn=87
-CursorLine=101
+CursorColumn=0
+CursorLine=107
 Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
 ViMarks=.,101,86,[,101,86,],101,86
 
 [view-settings,view=0,item:graficas.tex]
-CursorColumn=45
-CursorLine=97
+CursorColumn=62
+CursorLine=21
 Dynamic Word Wrap=true
 JumpList=
-TextFolding={"checksum":"6f630d06a4738752f74befa3d27eddc717a6e19a","ranges":[]}
-ViMarks=.,71,45,[,71,45,],71,45
+TextFolding=[]
+ViMarks=.,21,61,[,21,61,],21,61
 
 [view-settings,view=0,item:introduccion.tex]
-CursorColumn=107
-CursorLine=58
+CursorColumn=0
+CursorLine=124
 Dynamic Word Wrap=true
 JumpList=
-TextFolding={"checksum":"ea162f7e6725d2b6e4c7340ac828316c7bf1cc45","ranges":[]}
+TextFolding=[]
 ViMarks=.,28,46,[,28,42,],28,46
 
 [view-settings,view=0,item:presentacion.tex]
-CursorColumn=36
-CursorLine=99
+CursorColumn=16
+CursorLine=134
 Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
@@ -174,23 +174,23 @@ TextFolding=[]
 ViMarks=.,168,0,[,168,0,],168,0
 
 [view-settings,view=0,item:shaders2d.tex]
-CursorColumn=48
-CursorLine=360
+CursorColumn=78
+CursorLine=345
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
-ViMarks=.,360,48,[,360,48,],360,48
+ViMarks=.,345,60,[,345,60,],345,60
 
 [view-settings,view=0,item:shaders3d.tex]
-CursorColumn=43
-CursorLine=365
+CursorColumn=20
+CursorLine=412
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
-ViMarks=.,365,42,[,365,41,],365,42
+ViMarks=.,407,119,[,407,119,],407,119
 
 [view-settings,view=0,item:shadertoy.tex]
-CursorColumn=38
+CursorColumn=27
 CursorLine=83
 Dynamic Word Wrap=false
 JumpList=
