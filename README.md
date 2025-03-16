@@ -1,6 +1,6 @@
 # Taller de Shadertoy
 
-Este repositorio contiene todos los materiales del taller: que se imparte en el marco del [Congreso de Inteligencia Artificial](), los días 7 y 9 de abril del 2025.
+Este repositorio contiene todos los materiales del [taller](https://iacongreso.unam.mx/talleres/): que se imparte en el marco del [1er. Congreso Internacional de Inteligencia Artificial](https://iacongreso.unam.mx), los días 7 y 9 de abril del 2025.
 Aunque el taller se impartió de manera remota la sede oficial fue la [FES Acatlán](https://www.acatlan.unam.mx/).
 
 Hay dos grandes secciones en este repositorio:

@@ -158,12 +158,12 @@ TextFolding={"checksum":"ea162f7e6725d2b6e4c7340ac828316c7bf1cc45","ranges":[]}
 ViMarks=.,28,46,[,28,42,],28,46
 
 [view-settings,view=0,item:presentacion.tex]
-CursorColumn=17
-CursorLine=69
+CursorColumn=36
+CursorLine=99
 Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
-ViMarks=.,69,17,[,69,17,],69,17
+ViMarks=.,99,16,[,99,16,],99,16
 
 [view-settings,view=0,item:shaders.tex]
 CursorColumn=11
