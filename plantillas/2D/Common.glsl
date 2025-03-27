@@ -105,6 +105,7 @@ float sdEquilateralTriangle(vec3 fragCoord, mat3 T) {
 }
 
 // Isosceles center at the origin with one side parallel to the x-axis
+// q are scale factors such that q = vec2(basis, height)
 // And it is transformed by T, before return
 float sdTriangleIsosceles(vec3 fragCoord, vec2 q, mat3 T) {
 	vec2 point = (inverse(T) * fragCoord).xy;
@@ -121,7 +122,7 @@ float sdTriangleIsosceles(vec3 fragCoord, vec2 q, mat3 T) {
 
 // Triangle whose vertex are p0, p1 and p2
 // And it is transformed by T, before return
-float sdTriangle(vec2 fragCoord, vec2 p0, vec2 p1, vec2 p2, mat3 T) {
+float sdTriangle(vec3 fragCoord, vec2 p0, vec2 p1, vec2 p2, mat3 T) {
 	vec2 point = (inverse(T) * fragCoord).xy;
     
     vec2 e0 = p1 - p0, e1 = p2 - p1, e2 = p0 - p2;
@@ -138,7 +139,7 @@ float sdTriangle(vec2 fragCoord, vec2 p0, vec2 p1, vec2 p2, mat3 T) {
 
 // Heart like shape centered at the origin
 // And it is transformed by T, before return
-float sdHeart(vec2 fragCoord, mat3 T) {
+float sdHeart(vec3 fragCoord, mat3 T) {
 	vec2 point = (inverse(T) * fragCoord).xy;
     
     point.x = abs(point.x);
@@ -151,15 +152,23 @@ float sdHeart(vec2 fragCoord, mat3 T) {
                     dot2(point - 0.5 * max(point.x + point.y, 0.0)))) * sign(point.x - point.y);
 }
 
-// Cross centered at the origin
-// And it is transformed by T, before return
-float sdCross(vec2 fragCoord, vec2 b, float r, mat3 T) {
+// Cross with rounded corners
+// b.x is the size of the cross section
+// b.y is the width of a cross section
+// In ordet to have a cross b.x > b.y (or you get a square)
+// r is the roundness radious fo the corners r=0 is a normal cross
+// r < min (b.x b.y)
+// Finally, T transforms the whole shape
+float sdCross(vec3 fragCoord, vec2 b, float r, mat3 T) {
 	vec2 point = (inverse(T) * fragCoord).xy;
 	
-    point = abs(point); point = (point.y > point.x) ? point.yx : point.xy;
+    point = abs(point); 
+    point = (point.y > point.x) ? point.yx : point.xy;
+    
     vec2  q = point - b;
     float k = max(q.y, q.x);
     vec2  w = (k > 0.0) ? q : vec2(b.y - point.x, -k);
+    
     return sign(k) * length(max(w, 0.0)) + r;
 }
 
