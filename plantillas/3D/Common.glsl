@@ -1,3 +1,4 @@
+// Material for Phong shading
 struct Material {
   vec3 Ka;
   vec3 Kd;
@@ -10,18 +11,21 @@ struct Ray {
   vec3 direction;
 };
 
+// Point in the scene for Raymarching
+// We should put any information need to idenify and reconstruct a point that hist the scene
 struct ScenePoint {
   float dist;
   vec3 color;
   Material mat;
 };
 
+// Camera's pose
 struct Camera {
   vec3 position;
   vec3 target;
 };
 
-
+// Camera rotation from the postions and target paramters
 mat3 camRotation(Camera cam) {
 
     vec3 camDir = normalize(cam.target - cam.position);
@@ -44,6 +48,8 @@ vec3 getWorldCoordinates(vec2 fragCoord, vec3 iResolution) {
     return vec3(world, 1.0);
 }
 
+
+// Signed distance fields (sdf) of some shapes
 float sdSphere(vec3 position, vec3 shpereCenter, float radius) {
     return length(position - shpereCenter) - radius;
 }
@@ -75,6 +81,8 @@ float sdCylinder(vec3 position, float height, float radious, mat4 T) {
   return min(max(d.x, d.y), 0.0) + length(max(d, 0.0));
 }
 
+// Note that angle is the angle that makes the cone with an horizontal plane
+// or the complement of the actual cone angle
 float sdCone(vec3 position, float angle, float height, mat4 T) {
   
   vec3 tPos = (inverse(T) * vec4(position, 1.0)).xyz;
@@ -87,7 +95,7 @@ float sdFloor(vec3 position, float floorHeight) {
     return position.y - floorHeight;
 }
 
-
+// Boolean operations between shapes by sdfs
 float opUnion(float lhsd, float rhsd) {
     return min(lhsd, rhsd);
 }
@@ -104,7 +112,8 @@ float opXor(float lhsd, float rhsd) {
     return max(min(lhsd, rhsd), -max(lhsd, rhsd));
 }
 
-
+// Smooth boolean operations between shapes by sdfs
+// The smooth factor its in the same units as the sdfs
 float opSmoothUnion(float lhsd, float rhsd, float smoothFactor) {
     float h = clamp(0.5 + 0.5 * (rhsd - lhsd) / smoothFactor, 0.0, 1.0);
     return mix(rhsd, lhsd, h) - smoothFactor * h * (1.0 - h);
@@ -120,11 +129,13 @@ float opSmoothIntersection(float lhsd, float rhsd, float smoothFactor) {
     return mix(rhsd, lhsd, h) + smoothFactor * h * (1.0 - h);
 }
 
+// Select between two colors based on the coordinates of a plane
 vec3 getCheckboardPattern(vec2 coords, vec3 colorEven, vec3 colorOdd) {
     float alpha = mod(floor(coords.x) + floor(coords.y), 2.0);
     return mix(colorEven, colorOdd, alpha);
 }
 
+// Select between two Materials based on the coordinates of a plane
 Material getCheckboardPattern(vec2 coords, Material matEven, Material matOdd) {
     float selector = mod(floor(coords.x) + floor(coords.y), 2.0);
     Material m;
@@ -137,6 +148,8 @@ Material getCheckboardPattern(vec2 coords, Material matEven, Material matOdd) {
     return m;
 }
 
+
+// Affine transformation matrices
 mat4 rotate(vec3 axis, float angle) {
   axis = normalize(axis);
   float s = sin(angle);
@@ -211,7 +224,7 @@ vec3 toneMapping(vec3 color) {
 }
 
 
-//Math constants
+// Math constants
 const float Pi  = 3.141592653;
 const float Tau = 6.283185307;
 
