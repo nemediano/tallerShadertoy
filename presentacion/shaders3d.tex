@@ -418,8 +418,7 @@ float sdBox(vec3 position, vec3 boxCenter, vec3 boxSizes) {
 
 float sdBox(vec3 position, mat4 T) {
   vec3 tPos = (inverse(T) * vec4(position, 1.0)).xyz;
-  vec3 q = abs(tPos) - vec3(1.0);
-  return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0);
+  return sdBox(tPos, vec3(0.0), vec3(1.0));
 }
 \end{minted}
 \end{listing}

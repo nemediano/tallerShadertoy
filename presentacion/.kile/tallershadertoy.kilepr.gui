@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=presentacion.tex
+lastDocument=shaders3d.tex
 
 [document-settings,item:conclusion.tex]
 Bookmarks=
@@ -86,8 +86,8 @@ Mode=LaTeX
 Mode Set By User=false
 
 [item:conclusion.tex]
-open=false
-order=2
+open=true
+order=0
 
 [item:glsl.tex]
 open=false
@@ -102,7 +102,7 @@ open=false
 order=3
 
 [item:presentacion.tex]
-open=true
+open=false
 order=0
 
 [item:shaders.tex]
@@ -114,8 +114,8 @@ open=false
 order=0
 
 [item:shaders3d.tex]
-open=false
-order=0
+open=true
+order=1
 
 [item:shadertoy.tex]
 open=false
@@ -126,12 +126,12 @@ open=false
 order=-1
 
 [view-settings,view=0,item:conclusion.tex]
-CursorColumn=11
-CursorLine=195
+CursorColumn=19
+CursorLine=34
 Dynamic Word Wrap=true
 JumpList=
-TextFolding={"checksum":"9f05fa6ea9927adbb7848f3bcdff7bc215c644f4","ranges":[]}
-ViMarks=.,30,29,[,30,25,],30,29
+TextFolding=[]
+ViMarks=.,34,0,[,29,0,],34,18
 
 [view-settings,view=0,item:glsl.tex]
 CursorColumn=0
@@ -182,12 +182,12 @@ TextFolding={"checksum":"8772a21cbe32b6d335c65e380bf017145b72e74e","ranges":[]}
 ViMarks=.,345,60,[,345,60,],345,60
 
 [view-settings,view=0,item:shaders3d.tex]
-CursorColumn=20
-CursorLine=412
+CursorColumn=2
+CursorLine=419
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
-ViMarks=.,407,119,[,407,119,],407,119
+ViMarks=.,419,1,[,419,0,],419,1
 
 [view-settings,view=0,item:shadertoy.tex]
 CursorColumn=27
