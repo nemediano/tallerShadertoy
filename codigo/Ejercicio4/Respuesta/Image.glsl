@@ -14,7 +14,7 @@ const float PRECISION = 0.001;
 const vec3 lightPos = vec3(2, 2, 4);
 
 float sdScene(vec3 position) {
-    return sdSphere(position, vec3(0.0, 0.0, -2.0), 1.0);
+    return sdSphere(position, vec3(0.0, 0.0, -1.0), 1.0);
 }
 
 vec3 calcNormal(vec3 p) {
@@ -56,8 +56,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
     Ray r;
     r.origin = camPos;
-    r.direction = //normalize(vec3(coord.xy, -1.0));
-    normalize(vec3(coord.xy, 0.0) - camPos);
+    r.direction = normalize(vec3(coord.xy, -1.0));
+    
     float d = rayMarch(r, MIN_DIST, MAX_DIST);
 
     if (d < MAX_DIST) { // did ray hit something?
