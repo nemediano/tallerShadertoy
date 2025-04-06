@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=shaders3d.tex
+lastDocument=conclusion.tex
 
 [document-settings,item:conclusion.tex]
 Bookmarks=
@@ -103,7 +103,7 @@ order=3
 
 [item:presentacion.tex]
 open=false
-order=0
+order=2
 
 [item:shaders.tex]
 open=true
@@ -114,7 +114,7 @@ open=false
 order=0
 
 [item:shaders3d.tex]
-open=true
+open=false
 order=1
 
 [item:shadertoy.tex]
@@ -126,12 +126,12 @@ open=false
 order=-1
 
 [view-settings,view=0,item:conclusion.tex]
-CursorColumn=19
-CursorLine=34
+CursorColumn=118
+CursorLine=44
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
-ViMarks=.,34,0,[,29,0,],34,18
+ViMarks=.,44,117,[,44,117,],44,117
 
 [view-settings,view=0,item:glsl.tex]
 CursorColumn=0
@@ -158,11 +158,11 @@ TextFolding=[]
 ViMarks=.,28,46,[,28,42,],28,46
 
 [view-settings,view=0,item:presentacion.tex]
-CursorColumn=0
-CursorLine=112
+CursorColumn=48
+CursorLine=65
 Dynamic Word Wrap=false
 JumpList=
-TextFolding={"checksum":"a3c7e7d00bb09f33587b52660b291064e386d0e4","ranges":[]}
+TextFolding=[]
 ViMarks=.,99,16,[,99,16,],99,16
 
 [view-settings,view=0,item:shaders.tex]
