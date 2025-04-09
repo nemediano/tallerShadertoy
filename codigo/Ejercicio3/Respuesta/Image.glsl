@@ -11,14 +11,14 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
     mat3 M = mat3(1.0);
 
-    // Moving Boxes
-    float rvps = 1.0 / 8.0;
+    // Boxes
     M = translate(vec2(0.0, 0.8)) * scale(vec2(0.4, 0.075));
     float disLine1 = sdfSquare(inverse(M) * coord);
     M = translate(vec2(0.0, -0.8)) * scale(vec2(0.4, 0.075));
     float disLine2 = sdfSquare(inverse(M) * coord);
 
     // Moving Circles
+    const float rvps = 1.0 / 8.0;
     M = rotate(iTime * Tau * rvps) * translate(vec2(0.8, 0.0)) * scale(vec2(0.2));
     float disCircle1 = sdfCircle(inverse(M) * coord);
     M = rotate((iTime * Tau * rvps) + Tau / 2.0) * translate(vec2(0.8, 0.0)) * scale(vec2(0.2));
